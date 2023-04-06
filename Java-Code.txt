@@ -1,0 +1,176 @@
+1) Print a given array in a loop to output the desired pattern.
+
+Input length of an array, the array in a group and number of groups. Print the array cyclically in a loop.
+
+a) Length-6  |  Array-[1,2,3,4,5,6]
+   Group- 4  |  Iterations- 7
+   
+Prints Output = 
+
+	'1', '2', '3', '4'
+	'5', '6', '1', '2'
+	'3', '4', '5', '6'
+	'1', '2', '3', '4'
+	'5', '6', '1', '2'
+	'3', '4', '5', '6'
+	'1', '2', '3', '4'
+
+b) if Group - 5 | Iterations- 2 |  Array-[1,2,3,4,5,6]
+Output = 
+
+	'1', '2', '3', '4', '5'
+	'6', '1', '2', '3', '4'
+
+c) if Group- 3 | Iterations- 3
+
+Prints Output Like Below 
+
+	'1', '2', '3'
+	'4', '5', '6'
+	'1', '2', '3'
+
+
+2) Write Down a code to print this output.
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+* * * * * * * *
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+3) Write Down a code to print this output.
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+* * * * * * * *
+
+4) Write to print below OutPut.
+
+1,22,333,4444,55555,666666,7777777
+
+5) Write a program to fetch 2nd highest number.
+
+Ans : [1,2,3,4,5,6,7,8]
+
+6) Write a program to fecth highest and lowest Number.
+
+int a[] = {1,2,5,6,3,2};  
+
+7): Fibonacci series
+
+Ans : int [] a = [0,1,1,2,3,5,8,13]
+
+8) If a Number is Multiple of 3 print 'foo' and if number is multiple of 5 print 'Bar' .If Number is multiple of 5 and  3 both then print FooBar else print number.
+
+9): Write Custom iterator Which return even number.
+
+10) What is the output of below program.
+
+class Base {
+    public int data = 20;
+    public void display(BaseService service) {
+        System.out.println("In Base");
+    }
+}
+class Child extends Base {
+    public int data = 10;
+    public void display(ChildService service) {
+        System.out.println("In Child");
+    }
+}
+public class CompileTime {
+    public static void main(String[] args) {
+	
+        Base base = new Child();
+        System.out.println(base.data);   // 10
+        base.display(new ChildService());   // In Child
+        Child child = new Child();  
+        System.out.println(child.data);   //  10
+        child.display(new BaseService()); //  in Base 
+		
+    }
+}
+
+11) Write a Java Program to check Armstrong number.[American Express]
+
+153  = 1*1*1 + 5*5*5 + 3*3*3 = 1 + 125 + 27 = 153 (an Armstrong Number)
+125  = 1*1*1 + 2*2*2 + 5*5*5 = 1 + 8 + 125 = 134 (Not an Armstrong Number)
+1634 = 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1 + 1296 + 81 + 256 = 1634 (an Armstrong Number)
+
+12) Count the repeat no in given arays 
+
+Input int [] arr= {1,2,3,4,1,2,4,5}  and  outPut should be {1:2,2:2,3:1,4:2,5:1}
+
+13) Write a Program to test that functin is Anagram.
+//Two strings are said to be anagram if we can form one string by arranging the characters of another string. For example, Race and Care
+
+14) Java Program to find maximum in arr[10, 324, 45, 90, 9808]
+15) Write a program for gien series [544333222211111]
+16) How to create custom array list where I don't want to allow duplicate element
+17) Write a Programfor below outpt.
+
+	// Convert the String testCode  to  test_code
+	// Convert the test_code -> testCode
+	// Convert the testCode  -> test_code
+	// Convert the test_code_new -> testCodeNew
+18) How to sort a map based on their value.
+19) Convert List<Employee> to Map  where map key is wil be EmployeeId
+Ans : Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Employee::employeeId,Function.identity());
+
+20)This Program is written to count repeated Number/String [1,2,3,4,5,6,2,5,4,7,8,9,5,7,1]
+21)Fetch Duplcate element from the list.
+22)Fetch Employee name from list of Employees
+23)Write A program to fetch book Id whose name is james.
+24)Write a Program in Java-8 to return non repeatable number. String is 'java programming' 
+25)write a Program in Java-8 Program for non repeatable String. [java class java Anshul class] 
+26)Write a program in Java-8 to outlike 'JavaPrograming'. Input String ='Java Programing'.
+27)Write a Program in Java-8 return 2nd highest salary of Employee.
+28)Print Out like below output. list is given like "black", "Blue", "purple", "blue", "Grey", "green", "Red", "pink".
+// Out put should like Blue, black, blue, Grey, green, pink, purple, Red
+29) Fetch all integer value from String [user:21","user:22","user:23","user:24]. OutPut Should be [21,22,23,24]
+
+
+
+
+==========================================================================================================================================================================
+Stream API code
+
+
+Map<String, List<ChannelVO>> panCarteChannelVOMap = channelsVOs.stream()
+						.filter(channelVO -> null != channelVO.getLanguage() && null != channelVO.getChannelName()
+								&& channelVO.getChannelName().startsWith(BrqConstants.REGIONAL_INFO))
+						.collect(Collectors.groupingBy(channelVO -> channelVO.getLanguage(), Collectors.toList()));
+						
+
+// update cache for GID NA from LMF and UDM response
+                subscriberNAList = result.stream().map(m -> m.get(UUSDKeys.SUBSCRIBER_NA)).filter(Objects::nonNull).map(Object::toString).collect(Collectors.toList());
+				
+				
+		
+postalCode = channelZipCodes.stream().map(p -> p.postalCodeMinMaxJoin("-")).collect(Collectors.joining(","));
+
+
+ThreadPoolTaskExecutor  = is a specialized class for executing  tasks.
+ThreadPoolTaskScheduler = is a specialized class for scheduling tasks
+
+A ThreadPoolTaskExecutor provides fine-grained configuration over the thread pool through its corePoolSize, maxPoolSize, keepAliveSeconds and queueCapacity properties. 
+
+A scheduler such as ThreadPoolTaskScheduler does not provide such configuration.
+
+
+

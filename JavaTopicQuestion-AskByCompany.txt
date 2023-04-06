@@ -1,0 +1,323 @@
+// =======================  OOPS Question =====================================================================
+
+1) What is OOPS concept and why java is not fully object oriented language.
+2) What are SOLID principle of java OR Why java Robust SOLID (SLOID Principle) .
+3) What is Inheritance, Association , Aggregation, Composition , Generalization.
+4) What is disadavantage of Inheritance.
+5) Aggregation vs Composition
+6) Inheritance vs Association.
+
+// ============================Java-8 =========================================================================
+
+1) New feature of Java 8.[Option, Functional Interface, Lambda , Garbage Collector Improvements,Fork/Join Speed Improvements,Easy to Parallelize]
+2) Why Java-8 Introduce.
+2) How will u handle memory managment in java.[The removal of PermGen and the introduction of Metaspace]
+
+// ===================== Collection ===========================================================================
+
+1) Difference Between Map and Set and Tree
+2) Internal Implementation of HashMap  OR How HashMap Works internallly.
+3) What is ConCurrentHashMap and how it works internally.
+4) If we Put Employee Objct as a key , Then what will happened. 
+5) what is Fail safe (ConcurrentHashMap) and Fail fast (Map).
+6) How to make List as Unmodified.
+7) What is CAP (Consistency/Availability/Partision) 
+8) Suppose u have a collecion so would u like the for loop or iterator. (iterator)
+9) New Feature in Jav 8 fro HashMap and ConcurrentHashMap.
+
+https://www.youtube.com/watch?v=GO67C7V-IbQ
+
+// ========================= Stream API & Lambda Expression ===================================================
+
+1) : What is Lambda expression : 
+
+Ans : A Lambda expression (or function) is just an anonymous function, i.e., a function with no name and without being bounded to an identifier. 
+They are written exactly in the place where it’s needed, typically as a parameter to some other function.
+
+2) - Why do we need Lambda Expression?
+
+Ans : We need to use Lambda Expressions due to following reasons:
+
+	1) Reduced Lines of Code
+	2) Sequential and Parallel Execution Support
+	3) Passing Behaviors into methods
+	4) Higher Efficiency with Laziness
+
+3) What is Functional Interfaces and why do we need in java.
+
+Ans : The java.util.function package in Java 8 has many built-in functional interfaces like. A significant example is the Runnable and Callable interfaces used in concurrency APIs
+
+Built-in Functional Interfaces in Java : 
+
+1)predicate	  = Retun true and false
+2)Consumer	  = Take input as type but doesnot return any value.
+3)Supplier	  = Take no input but trurn output.  Ex=  T get() /optional Class
+4)Functional  = Take input and return value 
+
+4) 
+	a)What is Stream and Stream API. Why it was introduced in java 8 [To Support MultiCore uses]
+	b)Fork/join is now the framework that’s used under the covers for parallel operations in the Streams API
+
+5) Stream API function function or Method 
+
+Ans : Below Are Function/Method.
+
+	A) Terminal Operations : That produce a result or side effect, such as 
+	
+	toArray()
+	collect()
+	count()
+	reduce()
+	forEach()
+	forEachOrdered()
+	min()
+	max()
+	anyMatch()
+	allMatch()
+	noneMatch()
+	findAny()
+	findFirst()
+
+	B) Non-Terminal Operations (Inter-Mediate-operation) : That transform a stream into another stream, such as
+
+	filter()  ->  Filter out all the stream based on the condtion , Return true and false value
+	map() 	  ->  create the new of type stream .
+	flatMap() ->  Same as map but do the flattening ( Do the fla means that combines all stream and produce the single result.)
+	peek()	  ->  Just for Debugging purpose, print the stream
+	reduce()  ->  For Aggreagate function like Addition,subtraction , multiplication
+	distinct  ->  Always return disctinct stream element
+	limit()   ->  Return mention element of stream
+	Sort      ->  Sort the Stream Element based on the condition.
+	Collector ->  Convert the element back to the collection 
+
+
+1) What is Lamda Expression & How Compiler know this is lamda expression.
+2) What is Stream , Stream API and Why it was introduce in java8. (https://www.youtube.com/watch?v=jrxImJMndDI) 
+3) What are anonymous function of Stream API.
+   Ans: Consumer (ForEach) ,Supplier & Predicate (anyMatch)[ (https://www.youtube.com/watch?v=Tapz6_T5oHY) ]
+4) Difference Between Map and FlatMap.
+5) What is peek and reduce  method in stream.
+6) What is Diffrence Between Stream and Collection.
+7) How to sort a map based on the value in Java8 [map.entrySet().sorted(Map.Entry.CompareByValue()).collect(Collector.toList())]
+8) What are the main componnet of stream.
+9) How will u handle exception in stream API.
+
+// ===================== Thread ===============================================================================
+
+Experience with Multithreading, Concurrent Package and Concurrent APIs
+
+1) What is Thread.
+2) What are the Life Cycle method of Threaad.
+3) What is Diffence between wait and sleep.
+4) What is ThreadPool and  can we crate our own Thread Pool. Advantage of creating own ThreadPool.
+5) Thread Schedular vs Time Slicing.
+6) What is ExecutorService framework and what is Executor.
+7) What is Difference between Runnable and Callable.
+8) What is Reentrant lock in thread.
+9) What is CountDownlatch And Cyclic barrier.
+10)What is Finalize vs dispose.
+11)What is optimistic locking in java.
+12)What is CompletableFuture in java8.
+13)What is future 
+14)What is the difference between thread.start vs thread.run().
+15)What is difference between Process and Thread.
+16)Difference between submit and execute in exector FrameWork.
+17)Divide and Concor problem.
+18)What is difference between interpt and intrupted. 
+19)How to merge thread and find out which thread is lock.
+20)What is ForkJoin.
+21)Semaphore, Atomic variables.
+22)What is Transit and Volatite
+23)What is Thread dump in Java.
+
+
+//========================= SignleTon and Enum.===================================================================
+
+1) What is difference Between Singlton vs Enum. Give the case where u will used them.
+2) What are the ways to break singleton (Clone, Serialization , Reflection class.forName()).
+3) What is difference Serialaztion (JVM itself) vs Externalization (we decide the serialization process).
+4) 
+
+//------------------------Serialization and cloneing ---------------------------------------------------------------
+
+1) Difference between cloning and Copy Constructor (We can decide).
+2) Deep Cloning vs Shallow Cloning.
+3) Serialization . What is alternatve of Serialization (Externalization).
+
+
+-------------------------- Spring ---------------------------------------------------------------------------------
+
+
+	---------------------------- Spring IOC/ Spring Core------------------------------------------------------------
+
+	1) What is Spring IOC
+	2) What is Dependency Injection(DI). How many type of DI is available in spring.
+	3) What is Diffence between @AutoWire And Dependency Injection.
+	4) what is Spring Container.
+	5) what is BeanFacory vs ApplicationContext.
+	6) What is @Contrller and @ResponseBody in Spring.
+	
+	Ansh = @ResponseBody is a Spring annotation which binds a method return value to the web response body. It is not interpreted as a view name. It uses HTTP Message converters to convert the return value to HTTP response body, based on the content-type in the request HTTP header.
+	
+	7) Difference Between @ResponseBody vs HttpServletResponse.
+	8) What is Scope of bean. How will you create the object of prototype in Singleton bean.
+	9) What is the difference between PathVariable and RequestParam .
+	10)How will you create the object of prototype bean from single bean.
+	11)What is DI and without DI. What is alternative of DI in Java (@inject)
+	12)5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery....)
+	13)What is qualifier bean in spring.
+
+
+-------------------------- Spring AOP --------------------------------------------------------------------
+
+	1) What is Spring AOP and Give the case where you will used the AOP.
+	2) What is Aspect in AOP and How many Type of Aspect is available in Spring.
+	3) What is JointPoint,Adviced,Pointcut.
+	4) 
+
+-------------------------- Spring Boot --------------------------------------------------------------------
+
+	1) What is SpringBoot and describe its benifit over spring OR Why we should used Spring boot.
+	2) What is RestController.
+	5) How will u start the Spring boot.
+	3) Difference Between @RestController vs @Controller.
+	4) What is @EnableAutoConfiguration.
+	5) What is Spring Boot Starter Parent
+	6) What is advantage of spring boot stater.
+	7) What is Actuatter. Whats is Meteric i can check. OR What is actuator.
+	8) What is @SpringBootApplication  Annotation.
+	9) How will you write query in query and execute in Spring Boot.
+	10)How will you defined the endpoint of service/appliaction / What are the end point of Service.
+	11)Have u used Spring Security OR How will u authenicate the REST Service.
+	12)How will u handle transaction in Spring Boot.
+	13)Difference between components and services.What Happened if we mark service layer as a component.
+	14)How caching work in Spring Boot and Why do we need the cache.
+	16)How API Versioning is best pratice and if yes, then why will you go for that.
+	17)How to Defined Global exception.
+	18)What is profile in Spring Boot.
+	19)What is authenication and Authorization.
+	20)What is difference between Post,Put,Patch.
+	21)What is difference between throughput and response time.
+	
+
+--------------------------- Microservice -----------------------------------------------------------------
+
+	1) Defined the Architecture of Microservice. (Important)
+	2) What is the component of Microservice .
+	3) What is benifit of Service Discovery and its Role.
+	4) What is API gateway and their benifit.
+	5) How will authenicate the API.(Via JWT Token) OR How will u handle Security in microService By JWT.
+	5) How will you write all log in file(How will u track log details) in microservic when all service are deployed on the different server / How can I achive Centeralized Logging in microservice (Via Zipkin) OR How will tarce all log activity of all microService.[Correlation-Id]
+	6) How will externalized the microservice configuarion file.
+	7) How will one microservice communicate with other MicroService. (AsyncRestTemplate)
+	8) How will you maintain caching in Microsercvice.
+	9) How will you manage configuarion of 10 central Microservice (Read About Config Server)
+	10)What is Service Discovery and How it integrate with API GateWay and why it is needed.
+	11)Supose you have 3 instance of your microservice ,What then how API gateways know Which Service Instance we need to call.
+	12)Suppoose a microservice call another microservice and other call micro Serviceand so on.So how can we know where is error.
+	13)What is Zupkin. What is Zuul .
+	14)What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
+	15)What is CQRS vs CRUD.
+
+
+----------------------------------- Design Pattern -----------------------------------------------------
+
+1) Singleton Design Pattern
+2) Factory Design Pattern
+3) Abstract factory Design Pattern  = What is Abstract factory pattern. When u will used abstarct factory.
+4) Builder Design Pattern
+
+5) Adopter Design Pattern
+
+6) Strategy Design Pattern 
+7) Template Design pattern
+
+
+--------------------------------------- DataBase -------------------------------------------------------
+
+1) How will u create trigger.
+2) Difference between delete and Truncate.
+3) How many type of indexing and is it a good idea to have multiple indexing.
+4) GroupBy function.
+5) What is Cross Joins(cap jamini).
+6) What is SQL Injection.and how will u remove SQl injection in application.
+7) Difference between Stmt and PreapedStmt.
+8) What is cross join. 
+9) What is composite primary key.
+10)What is difference between primary key and unique key.
+11)How many type of indexing in Oracle.
+12)Fecth 3 highest salry of employee.
+Ansh :  selct * from Emplyee order by salary desc Limit 2,1
+
+13)Find out the max salry of each deartment Employee.EmployeeId, departmentId [ Engg, QA, dev, mgmt ] , Salary.
+Ans: select max(salray),departmentId from Employee group by departmentId;
+
+14)Find out the salary of those employee whose salary is greather than manager. Employee [id , name, managerId]
+
+Ans: SELECT * FROM employees w,employees m
+	WHERE w.manager_id = m.emp_id
+	AND w.salary > m.salary  and m.role <> 'manager'
+
+----------------------------------- ReactJS Question ---------------------------------------------------
+
+1) What is High Level Component.
+2) How to set Envirement variable in React.
+3) What is Webpack in react
+4) what is differen between == and === in reactjs.
+
+'= ='   is used for comparison between two variables irrespective of the datatype of variable.
+'= = =' is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
+
+5) What is cros in react 
+
+Ans :   res.header("Access-Control-Allow-Origin", "*");
+		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+		
+6) What is BootStrap and what is the benifit of bootStrap.
+7) Suppose u have Parent A and Child B,C. Now How I can get State value in classc C from B.
+8) What are life cycle of ReactJs.
+9) Difference between Props and State.
+10)What are the Higher Order Componenet in Reactjs.
+11)what is react hooks vs redux.
+12)What is the difference between class vs function in React.
+13)what is Pure Components in React
+
+
+----------------------------------- JAVAScript Question -----------------------------------------------
+
+5) What is Hoisting in java script.
+6) What is output of below program
+
+---------------------------------  UI Interview----------------------------------------------------------------------
+
+========================= HTML/Angluar ==============================================================================
+
+1) what is Prototype .
+2) What is BootStrap and what is the benifit of bootStrap.
+4) What is Display : None and Visibly : hidden in Css
+5) What is difference between HTML and HTML5.
+6) If you want to load and play video then what will you do.
+7) what is Observale. and 
+8) what is Zindex.
+9) what is difference div and span.
+10)What is doctype in HTML.
+
+------------------------------------------- Git ---------------------------------------------------------------------
+
+1) What is Rebase in GIT.
+2) What is difference between rebase and Merge.
+
+-------------------------------- Maven-------------------------------------------------------------------------------
+
+1)  How will you defined goal in Maven. 
+
+Fair Enough.
+
+------------------------------- CI/CD Tools -------------------------------------------------------------------------
+
+CI : What does CI stand for? Continuous integration is when each newly created part of the app is integrated into the existing one, carefully tested, and moved to the next stage. 
+
+CD : Continuous delivery is when the developers build the project step by step, and each phase can be delivered to the customer at any time. Source: 
+
+
+Cloud application services = AWS
