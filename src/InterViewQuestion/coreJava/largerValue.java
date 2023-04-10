@@ -1,6 +1,6 @@
 package InterViewQuestion.coreJava;
 
-//Java Program to find maximum in arr[]
+//Java Program to find maximum value in arr[]
 public class largerValue
 {
 	// Driver method

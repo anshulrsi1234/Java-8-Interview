@@ -18,11 +18,11 @@ public class ConvertUpperToLower {
 	
 	public static String getData(String inputData) {
 
-		 String str = inputData;  // test_code_new
+		 String str = inputData;  
 		 
 		 StringBuffer sb  = new StringBuffer();
 		 
-		 if(str.contains("_")){
+		 if(str.contains("_")){   // // test_code_new
 		 
 			 String[] array = str.split("_");
 			 

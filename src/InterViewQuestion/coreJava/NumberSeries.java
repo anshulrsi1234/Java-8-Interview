@@ -22,7 +22,7 @@ public class NumberSeries {
 	        for(in=1;in<=out;in++){
 	    	  System.out.print(out);
 	        }
-	        System.out.print(" ");
+	        System.out.print(",");
 	    }
 	    sc.close();
 	}

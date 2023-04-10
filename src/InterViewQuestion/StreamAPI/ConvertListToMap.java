@@ -36,7 +36,6 @@ public class ConvertListToMap {
 		  
 	  });
 	  
-	  
 	  System.out.println("Print element in MAP :::: " + emp_Map);
 	    
 	}

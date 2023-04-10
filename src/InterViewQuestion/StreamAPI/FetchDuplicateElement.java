@@ -18,6 +18,8 @@ public class FetchDuplicateElement {
 		
 		Set<Integer> set = new HashSet<>();
 		
+		Set<Integer> duplicateElement = null;
+		
 		Set<Integer> data = list.stream().filter(ele -> !set.add(ele)).collect(Collectors.toSet());
 		
 		System.out.println("data-1  = "  + data  +"\n");
@@ -28,8 +30,15 @@ public class FetchDuplicateElement {
 		
 		Map<Integer, Long> result = list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
-		Set<Integer> duplicateElement = list.stream().filter(n -> result.get(n) > 1).collect(Collectors.toSet());
-		System.out.print("<<< duplicateElement-2 >>>> " + duplicateElement);
+		//Case 1 :
+		//duplicateElement = list.stream().filter(n -> result.get(n) > 1).collect(Collectors.toSet());
+		
+		//Case 2 :
+		duplicateElement = result.entrySet().stream().filter(ele -> ele.getValue() > 1).map(ele -> ele.getKey()).collect(Collectors.toSet());
+		
+		System.out.println("<<< duplicateElement-2 >>>> " + duplicateElement);
+		
+		
 	}
 
 }

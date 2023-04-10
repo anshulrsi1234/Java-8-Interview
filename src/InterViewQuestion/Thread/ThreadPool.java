@@ -13,13 +13,14 @@ public class ThreadPool {
 		Executor ec= Executors.newFixedThreadPool(10);
 		ExecutorService executors = Executors.newFixedThreadPool(4);
 		
-		//Use Submit if response required.
+		//Use Submit if response required. OR Used Submit when you need any response
 		Future<?> future = executors.submit(() -> {
-			
-						  });
+			// TODO
+		});
 		
+		// Use execute if response not required. // Execute not return any response
 		executors.execute(() -> {
-			
+			// TODO 
 		});
 		
 		System.out.println("Hello :::::::");

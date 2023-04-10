@@ -9,11 +9,9 @@ import java.util.List;
  * !) Create the Custom Iterator which return only even number
  *
  */
-public class CustomIterator<E>  implements Iterator<E>{
+public class CustomIterator<E>  implements Iterable<E>{
 	
 	List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
-	
-	
 
 	@Override
 	public boolean hasNext() {
@@ -23,6 +21,12 @@ public class CustomIterator<E>  implements Iterator<E>{
 
 	@Override
 	public E next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterator<E> iterator() {
 		// TODO Auto-generated method stub
 		return null;
 	}
