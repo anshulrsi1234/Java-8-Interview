@@ -1,0 +1,71 @@
+// https://www.youtube.com/watch?v=zguhGHVUzIM
+
+//=======================================================================================================
+1) Event Public and Event looping
+2) What is Semantic dash in Html
+3) What is Box model [
+4) 'Visiblity:hidden' and 'display:none'
+5) Sudo class vs sudo element [Hover and Active]
+6) What is 'Margin' and 'Padding'
+7) what is closure in javascript 
+8) What is difference var and let
+9) Debounce – How to Delay a Function in JavaScript (JS ES6 Example)
+10)What s Redux [Reducer]. Is Redux is 
+11)what is Higher Order Function
+12)What is debounce JavaScript?
+
+//=======================  Interview Question ============================================================
+
+1)	What is Hoisting in JS? How it works.
+3)	What is difference between let and var.
+4)	What is Event Loop.
+5)	What is precedence in Event Loop.
+6)	What is difference between setTimeout and setInterval.
+7)	Where do you use Rest Operator.
+8)	Have you heard of array.reverse.
+9)	What is meant by Shallow copy and Deep copy.
+10) What are Closure?
+11) Have you used reduce function in JS.
+12) What is the difference between map and reduce.
+13) What are the parameters map function accepts.
+14) What is difference between a Promise [Pending,Success/Reject] and a Callback.
+15) What position attributes in CSS have you used.
+16) What is the difference between them.
+17) What is Flexbox.
+18) What is difference between display=none and visibility=hidden.
+19) What are the Hooks you have used? useEffect,useFetch
+20) What is the purpose of useCallback.
+21) What are Class based Lifecycle methods? mount,update,unmount.
+22) How would you be able to achieve componentDidMount, componentDidUpdate & componentDidUnMount in functional based component? getDriveFromState.
+23) What are Pure Components and its purpose.
+24) What are Higher Order components.
+25) What HOCs have you used? [ Connect,carime java]
+26) Have you used Context API.
+27) Already have state management in React, so why go for Redux?
+28) How Redux works.  [Selector]
+29) Have you used any Middlewares.
+
+// MindTree Inter View Question
+
+1) What is the life Cyclic method of React
+2)
+
+//================  Coforge Inter View Question =============================================================
+
+1)  Var abc = 4 +"3"+ 2 + 6
+2)  What are promises and waht are the state of promise.[Pending fillful and reject]
+3)  Can we used await in promise without async
+4)  Life cycle componenet of React.
+5)  What is unidirectional data flow.
+6)  what is server rendering in react []
+7)  what is array destructuring. Where we used in react.
+8)  Suppose I have any parenet class  having child class. I had changed in parent class , then will child will load.
+9)  What is react Memo.
+10) What is pure component.
+11) How to pass to data from paent to child. Can we pass react hook as a hook.
+12) What is highter order component.
+13) What is react fragment.
+14) what is useEffect hook.
+15)
+
+

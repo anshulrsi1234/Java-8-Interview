@@ -1,0 +1,54 @@
+------------------------ AWS Code Location -------------------------------------------------------------------------
+Pradhan Mantri Vaya Vandana Yojana(PMVVY)
+
+---------------------------- Git Hub for Operator  GUI Code ------------------------------------------------------
+
+Frontend Code : https://github.com/prajmeister/RSIVideoSolution1
+
+Username/password : anshul12singhal/Welcome^%77rs
+
+----- Git Hub for Mobile App  GUI Code------
+
+Frontend Code : https://github.com/anoop84/ionic-amplfy-clientui-app
+Backend Code  : https://git-codecommit.us-west-2.amazonaws.com/v1/repos/media-front-end-ms
+
+Code check-in form git =  Anoop.Singh@rsystems.com-at-425069487910 / uZYEuq+Zjcy/FQfpE4W2j11c9lCmtM9Gz01gyMwMFpk=
+
+https://rsivod.d1nt2n3my0po3r.amplifyapp.com/  [anshul.singhal@rsystems.com]
+
+
+----------------------AWS Service -----------------------------------------------------------------------------
+
+1) AWS APIGatway [ Having detail of API method GET/POST/OPTION/]
+2) AWS Lambda [ Java8, NodeJS, Python]
+3) AWS S3 Bucket [Like C or D Hard drive]
+4) AWS DynaoDB [ Amazon Data base]
+5) AWS CodeCommit [For Code check-in and Check -out]
+
+6) AWS Pinpoint [Sending notfication Like] 
+7) AWS Personalize [Like Recommendaion]
+
+8) AWS Cognito Pool [ For Log Search of project]
+9) AWS MediaLive, Elimatal Media Package, Media Convert  [Video]
+10)AWS CloudWatch [service which is a monitoring service]
+11)AWS EC2 [ project hosting on Linux or Unix]
+
+12)AWS Media Tailer ( To add Advertisement in Video)
+13)AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
+14)AWS Amplify [ Hosting for GUI ]
+
+Certification = AWS Certified Developer Associate
+
+
+---------------------AWS LocalDB ----------------------------------------------------------------------
+
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 5798
+
+-------------------- GUI FrameWork Technology ---------------------------------------------------------
+
+Mobile = React + Ionic
+
+git config user.name 'Anshul Singhal'
+git config user.email 'anshul.singhal@rsystems.com'
+
+

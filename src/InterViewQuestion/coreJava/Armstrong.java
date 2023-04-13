@@ -18,7 +18,7 @@ public class Armstrong {
 
         originalNumber = number;
 
-        while (originalNumber != 0)
+        while (originalNumber > 0)
         {
             remainder = originalNumber % 10;
             result += Math.pow(remainder, 3);
