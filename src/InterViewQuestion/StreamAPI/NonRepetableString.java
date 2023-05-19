@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 // Program for non repeatable String
-public class Nonreprit {
+public class NonRepetableString {
 	
 	public static void main(String[] args) {
 		

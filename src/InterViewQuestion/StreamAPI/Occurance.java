@@ -1,9 +1,11 @@
 package InterViewQuestion.StreamAPI;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 //This Question is ask in Frequency Company
@@ -34,6 +36,12 @@ public class Occurance {
 		// Display data in print
 		System.out.println("------------print usig system.out.print method------------------------------------------- ");
 		map.entrySet().stream().sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()).forEach(System.out::println); // or any other terminal method
+		
+		List<Entry<Integer, Long>> list = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+		.entrySet().stream().sorted(Map.Entry.<Integer,Long>comparingByValue().reversed()).collect(Collectors.toList());		
+		
+		System.out.println(">>>>>> Integer <<<<<<<< " + list);
+				
 		
 	}
 	

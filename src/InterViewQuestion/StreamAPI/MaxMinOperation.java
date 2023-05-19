@@ -1,6 +1,7 @@
 package InterViewQuestion.StreamAPI;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -27,7 +28,17 @@ public class MaxMinOperation {
 		String result1 = valueList.stream().skip(count-1).findFirst().get();
 		System.out.println("result1 >>>>>> " +result1);
 		
+		// Fetch Max and Min Operation  
 		
+		int a[] = {1,2,5,6,3,2};  
+		
+	   Integer maxValue = Arrays.stream(a).boxed().max((x,y) -> x.compareTo(y)).get();
+	   System.out.println("Max Value is " + maxValue);
+	   
+	   Integer minValue = Arrays.stream(a).boxed().min((x1,y1) -> x1.compareTo(y1)).get();
+	   System.out.println("Min Value is " + minValue);
+	   
+	   
 	}
 	
 

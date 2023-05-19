@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 // Program to return non repeatable number. 
-public class NonRepeartable {
+public class NonRepeartableString2 {
 	
 	public static void main(String[] args) {
 		
