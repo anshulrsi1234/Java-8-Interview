@@ -19,23 +19,32 @@ https://rsivod.d1nt2n3my0po3r.amplifyapp.com/  [anshul.singhal@rsystems.com]
 
 ----------------------AWS Service -----------------------------------------------------------------------------
 
-1) AWS APIGatway [ Having detail of API method GET/POST/OPTION/]
+1) AWS APIGatway [ Having detail of API method GET/POST/OPTION/ ]
 2) AWS Lambda [ Java8, NodeJS, Python]
 3) AWS S3 Bucket [Like C or D Hard drive]
 4) AWS DynaoDB [ Amazon Data base]
-5) AWS CodeCommit [For Code check-in and Check -out]
+5) AWS Cognito Pool [ For Log Search of project]
+6) AWS CloudWatch [service which is a monitoring service]
 
-6) AWS Pinpoint [Sending notfication Like] 
-7) AWS Personalize [Like Recommendaion]
+7) AWS EC2 [ project hosting on Linux or Unix] : 
+8) AWS ECS (Elastic Container Service ) : 
+9) AWS EKS (Elastic Kubernetes Service) : 
 
-8) AWS Cognito Pool [ For Log Search of project]
-9) AWS MediaLive, Elimatal Media Package, Media Convert  [Video]
-10)AWS CloudWatch [service which is a monitoring service]
-11)AWS EC2 [ project hosting on Linux or Unix]
+10)AWS Elastic beanstalk :  [Elastic Beanstalk is a service for deploying and scaling web applications and services. Upload your code 							  and Elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, 							 and auto scaling to application health monitoring
+							]
 
-12)AWS Media Tailer ( To add Advertisement in Video)
-13)AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
-14)AWS Amplify [ Hosting for GUI ]
+11)AWS Fargate : [AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications 				  without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) 
+				  and Amazon Elastic Kubernetes Service (EKS).
+				 ]
+======================================Part 2 ==============================================================================
+
+12) AWS MediaLive, Elimatal Media Package, Media Convert,Media Trail  [Video]
+13) AWS CodeCommit [For Code check-in and Check-out]
+14) AWS Pinpoint [Sending notfication Like] 
+15) AWS Personalize [Like Recommendaion]
+16)AWS Media Tailer ( To add Advertisement in Video)
+17)AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
+18)AWS Amplify [ Hosting for GUI ]
 
 Certification = AWS Certified Developer Associate
 
