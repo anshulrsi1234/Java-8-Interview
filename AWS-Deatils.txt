@@ -24,7 +24,15 @@ https://rsivod.d1nt2n3my0po3r.amplifyapp.com/  [anshul.singhal@rsystems.com]
 3) AWS S3 Bucket [Like C or D Hard drive]
 4) AWS DynaoDB [ Amazon Data base]
 5) AWS Cognito Pool [ For Log Search of project]
-6) AWS CloudWatch [service which is a monitoring service]
+6) AWS CloudWatch [This is a monitoring service]
+
+You can create alarms that watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use that data to determine whether you should launch additional instances to handle increased load. You can also use this data to stop under-used instances to save money.
+
+7) AWS CloudFormation :  AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources 						 and more time focusing on your applications that run in AWS. You create a template that describes all the AWS resources that you want (like 						 Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you
+
+RDS, Elastic Load Balancer.
+
+8) AWS SNS and SQS
 
 7) AWS EC2 [ project hosting on Linux or Unix] : 
 8) AWS ECS (Elastic Container Service ) : 
@@ -36,15 +44,32 @@ https://rsivod.d1nt2n3my0po3r.amplifyapp.com/  [anshul.singhal@rsystems.com]
 11)AWS Fargate : [AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications 				  without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) 
 				  and Amazon Elastic Kubernetes Service (EKS).
 				 ]
+
+------------------ Advance AWS  ----------------------------------------------------------------------------------------
+
+8)AWS Fargate : [	
+					1) AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. 
+					2) AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+				 ]
+9) AWS EC2 [ project hosting on Linux or Unix] : 
+10)AWS ECS (Elastic Container Service ) : 
+11)AWS ECR (Elastic Container Registry) : Its like Docker hub registry.
+12)AWS EKS (Elastic Kubernetes Service) : 
+
+13)AWS Elastic BeanStalk :  [ 
+								1) Elastic Beanstalk is a service for deploying and scaling web applications and services. 
+								   Upload your code and elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, and auto scaling to application health monitoring
+							
+							]
 ======================================Part 2 ==============================================================================
 
 12) AWS MediaLive, Elimatal Media Package, Media Convert,Media Trail  [Video]
 13) AWS CodeCommit [For Code check-in and Check-out]
 14) AWS Pinpoint [Sending notfication Like] 
 15) AWS Personalize [Like Recommendaion]
-16)AWS Media Tailer ( To add Advertisement in Video)
-17)AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
-18)AWS Amplify [ Hosting for GUI ]
+16) AWS Media Tailer ( To add Advertisement in Video)
+17) AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
+18) AWS Amplify [ Hosting for GUI ]
 
 Certification = AWS Certified Developer Associate
 
@@ -53,11 +78,53 @@ Certification = AWS Certified Developer Associate
 
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 5798
 
--------------------- GUI FrameWork Technology ---------------------------------------------------------
-
-Mobile = React + Ionic
-
-git config user.name 'Anshul Singhal'
-git config user.email 'anshul.singhal@rsystems.com'
+------ ---------------------------   Docker Image ---------------------------------------------------------------------
 
 
+-------------  To create image -------------------------------
+
+docker build -t spring-boot-image:9.0 .
+
+--------Remove/untagged  Image from docker ------------------------------------------
+
+docker tag bb38976d03cf anshul32615/verse_gapminder
+
+--------Push image from Docker ------------------------------------------------------
+
+docker push anshul32615/dockerkubernate:spring-boot-image
+
+--------Pull image from Docker ------------------------------------------------------
+
+docker image pull anshul32615/docker-repository:11.0
+
+--------Rename Container name -------------------------------------------------------
+
+docker rename romantic_chaum spring-boot-Container7
+
+--------To run Docker Image --------------------------------------------------------
+
+docker run --name spring-boot-container4 -p 8080:8080 -t spring-boot-image:6.0
+
+---- To run same image on multiple container ---------------------------------------
+
+docker run --name spring-boot-Container5 -p 8081:8080 -t spring-boot-image:2.0
+
+docker run -p port:port test2
+
+
+----Deploy image in Kubernate cluster/Container ------------------------------------
+
+kubectl create deployment spring-boot-9 --image=spring-boot-image:9.0 --port=8080
+
+
+kubectl create deployment spring-boot-10 --image=spring-boot-image:10.0 --port=8080
+
+kubectl get deployment
+
+kubectl describe deployment
+
+kubectl get pods
+
+When 2 POD (Replica=2) for same Deployment
+kubectl port-forward pods/spring-boot-9-65f588589c-8mzwk 8080
+kubectl port-forward pods/spring-boot-9-65f588589c-4wdlt 8081:8080
