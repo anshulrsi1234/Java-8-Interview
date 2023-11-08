@@ -143,6 +143,7 @@ Ans : Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Emp
 28)Print Out like below output. list is given like "black", "Blue", "purple", "blue", "Grey", "green", "Red", "pink".
 // Out put should like Blue, black, blue, Grey, green, pink, purple, Red
 29) Fetch all integer value from String [user:21","user:22","user:23","user:24]. OutPut Should be [21,22,23,24]
+30) Sort map based on map.
 
 
 
