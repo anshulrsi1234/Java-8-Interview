@@ -1,7 +1,6 @@
------------------------- AWS Code Location -------------------------------------------------------------------------
-Pradhan Mantri Vaya Vandana Yojana(PMVVY)
+---------------------------------------- AWS Code Location  --------------------------------------------------------------------------
 
----------------------------- Git Hub for Operator  GUI Code ------------------------------------------------------
+-------------------------------- Git Hub for Operator  GUI Code -----------------------------------------------------
 
 Frontend Code : https://github.com/prajmeister/RSIVideoSolution1
 
@@ -17,66 +16,69 @@ Code check-in form git =  Anoop.Singh@rsystems.com-at-425069487910 / uZYEuq+Zjcy
 https://rsivod.d1nt2n3my0po3r.amplifyapp.com/  [anshul.singhal@rsystems.com]
 
 
-----------------------AWS Service -----------------------------------------------------------------------------
+----------------------------------- OTT APP Handler GUI code---------------------------------------------------------
 
-1) AWS APIGatway [ Having detail of API method GET/POST/OPTION/ ]
-2) AWS Lambda [ Java8, NodeJS, Python]
-3) AWS S3 Bucket [Like C or D Hard drive]
-4) AWS DynaoDB [ Amazon Data base]
-5) AWS Cognito Pool [ For Log Search of project]
-6) AWS CloudWatch [This is a monitoring service]
+git clone https://bitbucket.org/rishu-rsystems/ottclientapp.git
 
-You can create alarms that watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use that data to determine whether you should launch additional instances to handle increased load. You can also use this data to stop under-used instances to save money.
+git config user.name 'Anshul Singhal'
+git config user.email 'anshul.singhal@rsystems.com'
 
-7) AWS CloudFormation :  AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources 						 and more time focusing on your applications that run in AWS. You create a template that describes all the AWS resources that you want (like 						 Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you
+git remote add origin https://github.com/anshulrsi1234/spring-boot-microservice.git
 
-RDS, Elastic Load Balancer.
 
-8) AWS SNS and SQS
+----------------------------------------------  AWS Service ----------------------------------------------------------------
 
-7) AWS EC2 [ project hosting on Linux or Unix] : 
-8) AWS ECS (Elastic Container Service ) : 
-9) AWS EKS (Elastic Kubernetes Service) : 
+1)  AWS APIGatway [ Having detail of API method GET/POST/OPTION/ ]
+2)  AWS Lambda [ Java8, NodeJS, Python] [FAAS] = It is a function which is fired on any event. It is also said 'function-as-a-service'.
+3)  AWS S3 Bucket [Like C or D Hard drive] 
+4)  AWS DynaoDB [ Amazon Data base] 
+5)  AWS Cognito Pool [For User Inforamtion and User entry]
+6)  AWS CloudWatch [service which is a monitoring service/ Serah For Log] : You can create alarms that watch metrics and send notifications or automatically make 	     changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your 
+		Amazon EC2 instances and then use that data to determine whether you should launch additional instances to handle increased load. You can also use this data
+		to stop under-used instances to save money.
+7)  AWS CloudTrail
+8)  AWS IAMS
+9)  AWS CloudFormation :  AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources 						   and more time focusing on your applications that run in AWS. You create a template that describes all the AWS resources that you want (like 						    Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you
+10) AWS SNS and SQS : 
+11) AWS SAM Local (Spring Boot):
 
-10)AWS Elastic beanstalk :  [Elastic Beanstalk is a service for deploying and scaling web applications and services. Upload your code 							  and Elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, 							 and auto scaling to application health monitoring
-							]
+---------------------------------------------- Advance AWS  --------------------------------------------------------------------
 
-11)AWS Fargate : [AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications 				  without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) 
-				  and Amazon Elastic Kubernetes Service (EKS).
-				 ]
-
------------------- Advance AWS  ----------------------------------------------------------------------------------------
-
-8)AWS Fargate : [	
+1) AWS VPC (Virtual Private Cloud)
+2) AWS EC2 [Project hosting on Linux or Unix/ Create Complete Project Infra-structure] : 
+3) AWS ECS (Elastic Container Service ) [CAAS 'CONTAINER-AS-A-SERVICE']: 
+4) AWS ECR (Elastic Container Registry) : Its like Docker hub registry.
+5) AWS Fargate [PAAS 'Plateform-AS-A-SERVICE']:: It is a Plateform where you can run multiple container 
+				 [	
 					1) AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. 
 					2) AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
 				 ]
-9) AWS EC2 [ project hosting on Linux or Unix] : 
-10)AWS ECS (Elastic Container Service ) : 
-11)AWS ECR (Elastic Container Registry) : Its like Docker hub registry.
-12)AWS EKS (Elastic Kubernetes Service) : 
-
-13)AWS Elastic BeanStalk :  [ 
+6) AWS EKS (Elastic Kubernetes Service) : 
+7) AWS Elastic BeanStalk :   [ 
 								1) Elastic Beanstalk is a service for deploying and scaling web applications and services. 
 								   Upload your code and elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, and auto scaling to application health monitoring
-							
 							]
-======================================Part 2 ==============================================================================
+====================================== -- Part 2 ---- ==============================================================================
 
-12) AWS MediaLive, Elimatal Media Package, Media Convert,Media Trail  [Video]
-13) AWS CodeCommit [For Code check-in and Check-out]
-14) AWS Pinpoint [Sending notfication Like] 
-15) AWS Personalize [Like Recommendaion]
-16) AWS Media Tailer ( To add Advertisement in Video)
-17) AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
-18) AWS Amplify [ Hosting for GUI ]
+1) AWS MediaLive, Elimatal Media Package, Media Convert,Media Trail  [Video]
+2) AWS CodeCommit [For Code check-in and Check-out]
+3) AWS Pinpoint [Sending notfication Like] 
+4) AWS Personalize [Like Recommendaion]
+5) AWS Media Tailer ( To add Advertisement in Video)
+6) AWS CloudFront [static and dynamic web content, such as .html, .css, .js, and image files]
+7) AWS Amplify [ Hosting for GUI ]
 
-Certification = AWS Certified Developer Associate
+Certificate  : 1) AWS Certified Developer Associate
 
+Start873?Start873!&&
 
----------------------AWS LocalDB ----------------------------------------------------------------------
+-------------------------------------------AWS LocalDB --------------------------------------------------------------------------------------
 
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 5798
+
+-------------------- GUI FrameWork Technology -------------------------------------------------------------------------
+
+Mobile = React + Ionic
 
 ------ ---------------------------   Docker Image ---------------------------------------------------------------------
 
@@ -128,3 +130,8 @@ kubectl get pods
 When 2 POD (Replica=2) for same Deployment
 kubectl port-forward pods/spring-boot-9-65f588589c-8mzwk 8080
 kubectl port-forward pods/spring-boot-9-65f588589c-4wdlt 8081:8080
+
+
+
+
+
