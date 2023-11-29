@@ -82,7 +82,7 @@ Ans : Below Are Function/Method.
 
 	filter()  ->  Filter out all the stream based on the condtion , Return true and false value
 	map() 	  ->  create the new of type stream .
-	flatMap() ->  Same as map but do the flattening ( Do the fla means that combines all stream and produce the single result.)
+	flatMap() ->  Same as map but do the flattening ( Do the flattening means that combines all stream and produce the single result.)
 	peek()	  ->  Just for Debugging purpose, print the stream
 	reduce()  ->  For Aggreagate function like Addition,subtraction , multiplication
 	distinct  ->  Always return disctinct stream element
@@ -102,6 +102,10 @@ Ans : Below Are Function/Method.
 8) What are the main componnet of stream.
 9) How will u handle exception in stream API.
 
+code wise ----
+
+10)Find Out the third Higest Salery from array via Stream.
+
 // ===================== Thread ===============================================================================
 
 Experience with Multithreading, Concurrent Package and Concurrent APIs
@@ -116,26 +120,25 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 8) What is Reentrant lock in thread.
 9) What is CountDownlatch And Cyclic barrier.
 10)What is Finalize vs dispose.
-11)What is optimistic locking in java.
-12)What is CompletableFuture in java8.
-13)What is future 
+11)What is optimistic locking in Java.
+12)What is CompletableFuture in Java 8.
+13)What is future.
 14)What is the difference between thread.start vs thread.run().
 15)What is difference between Process and Thread.
 16)Difference between submit and execute in exector FrameWork.
-17)Divide and Concor problem.
-18)What is difference between interpt and intrupted. 
-19)How to merge thread and find out which thread is lock.
-20)What is ForkJoin.
-21)Semaphore, Atomic variables.
-22)What is Transit and Volatite
-23)What is Thread dump in Java.
+17)What is difference between interpt and intrupted. 
+18)How to merge thread and find out which thread is lock.
+19)What is ForkJoin.[Divide and Concor problem.]
+20)Semaphore, Atomic variables.
+21)What is Transit[Doesn't Serialize] and Volatite [Stored and Read Value from Main Memory].
+22)What is Thread dump in Java.
 
 
 //========================= SignleTon and Enum.===================================================================
 
 1) What is difference Between Singlton vs Enum. Give the case where u will used them.
 2) What are the ways to break singleton (Clone, Serialization , Reflection class.forName()).
-3) What is difference Serialaztion (JVM itself) vs Externalization (we decide the serialization process).
+3) What is difference b/w Serialaztion (JVM itself) vs Externalization (we decide the serialization process).
 4) 
 
 //------------------------Serialization and cloneing ---------------------------------------------------------------
@@ -161,10 +164,8 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	
 	7) Difference Between @ResponseBody vs HttpServletResponse.
 	8) What is Scope of bean. How will you create the object of prototype in Singleton bean.
-	9) What is the difference between PathVariable and RequestParam .
 	10)How will you create the object of prototype bean from single bean.
 	11)What is DI and without DI. What is alternative of DI in Java (@inject)
-	12)5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery....)
 	13)What is qualifier bean in spring.
 
 
@@ -173,64 +174,98 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	1) What is Spring AOP and Give the case where you will used the AOP.
 	2) What is Aspect in AOP and How many Type of Aspect is available in Spring.
 	3) What is JointPoint,Adviced,Pointcut.
-	4) 
 
 -------------------------- Spring Boot --------------------------------------------------------------------
-
+	
+	
 	1) What is SpringBoot and describe its benifit over spring OR Why we should used Spring boot.
 	2) What is RestController.
-	5) How will u start the Spring boot.
-	3) Difference Between @RestController vs @Controller.
-	4) What is @EnableAutoConfiguration.
-	5) What is Spring Boot Starter Parent
-	6) What is advantage of spring boot stater.
-	7) What is Actuatter. Whats is Meteric i can check. OR What is actuator.
-	8) What is @SpringBootApplication  Annotation.
-	9) How will you write query in query and execute in Spring Boot.
-	10)How will you defined the endpoint of service/appliaction / What are the end point of Service.
-	11)Have u used Spring Security OR How will u authenicate the REST Service.
-	12)How will u handle transaction in Spring Boot.
-	13)Difference between components and services.What Happened if we mark service layer as a component.
-	14)How caching work in Spring Boot and Why do we need the cache.
+	3) How will u start the Spring boot.
+	4) Difference Between @RestController vs @Controller.
+	5) What is @EnableAutoConfiguration.
+	6) What is Spring Boot Starter Parent
+	7) What is advantage of spring boot stater.
+	8) What is Actuatter. Whats is Meteric i can check. OR What is actuator.
+	9) What is @SpringBootApplication  Annotation.
+	10) How will you write query in query and execute in Spring Boot.
+	11)How will you defined the endpoint of service/appliaction / What are the end point of Service.
+	12)Have u used Spring Security OR How will u authenicate the REST Service. (Important)
+	13)How will u handle transaction in Spring Boot.(Important)
+	   [@Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
+	   
+	14)Difference between components and services.What Happened if we mark service layer as a component.
+	15)How caching work in Spring Boot and Why do we need the cache.
 	16)How API Versioning is best pratice and if yes, then why will you go for that.
 	17)How to Defined Global exception.
 	18)What is profile in Spring Boot.
 	19)What is authenication and Authorization.
 	20)What is difference between Post,Put,Patch.
+		(PATCH is non-idempotent, while PUT is idempotent).POST and PATCH are generally considered  
+		 non-idempotent, as their outcomes may vary with each request
 	21)What is difference between throughput and response time.
+	22)What is the difference between PathVariable and RequestParam .
+	23)Idempotent /Idempotency in Rest-API
+		Idempotent /Idempotency means sending the same request multiple times will produce the same result, without changing the state of the server or the resource.(PATCH is non-idempotent, while PUT is idempotent).POST and PATCH are generally considered non-idempotent, as their outcomes may vary with each request
+
+--------------------------- Microservice ---------------------------------------------------------------------------------------------------------------
 	
-
---------------------------- Microservice -----------------------------------------------------------------
-
 	1) Defined the Architecture of Microservice. (Important)
 	2) What is the component of Microservice .
+	
+		Ans: 5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery....)
+	
 	3) What is benifit of Service Discovery and its Role.
-	4) What is API gateway and their benifit.
+	4) What is API gateway and their benifit. [Netflix Zuul API Gateway]
+		Netflix Zuul : JVM based Router and server side load balancer. So filter request based on URL we used the Zuul Microservice.
 	5) How will authenicate the API.(Via JWT Token) OR How will u handle Security in microService By JWT.
-	5) How will you write all log in file(How will u track log details) in microservic when all service are deployed on the different server / How can I achive Centeralized Logging in microservice (Via Zipkin) OR How will tarce all log activity of all microService.[Correlation-Id]
-	6) How will externalized the microservice configuarion file.
-	7) How will one microservice communicate with other MicroService. (AsyncRestTemplate)
+	
+	5) How will you write all log in file(How will u track log details) in microservic when all service are deployed on the different server / How can  I achive Centeralized Logging in microservice (Via Zipkin) OR How will tarce all log activity of all microService.[Correlation-Id]
+	
+	6) How will externalized the microservice configuarion file. [On Git Server]
+	7) How will one microservice communicate with other MicroService. 
+		(AsyncRestTemplate / MessageQueue / RestTemplate)
 	8) How will you maintain caching in Microsercvice.
-	9) How will you manage configuarion of 10 central Microservice (Read About Config Server)
-	10)What is Service Discovery and How it integrate with API GateWay and why it is needed.
+	9) How will you manage configuarion of 10 central Microservice (Read About Config Server). How Other know That configuration has been changed.
+	10)What is Service Discovery [Euroka Client] and How it integrate with API GateWay and why it is needed [Used while comminicatng with microservice]. What is client and server side.
+	
 	11)Supose you have 3 instance of your microservice ,What then how API gateways know Which Service Instance we need to call.
-	12)Suppoose a microservice call another microservice and other call micro Serviceand so on.So how can we know where is error.
-	13)What is Zupkin. What is Zuul .
-	14)What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
-	15)What is CQRS vs CRUD.
+	12)Suppoose a microservice call another microservice and other call micro Serviceand so on.So how can we know where is error.[Distributed log /Centeralizee Logging]
 
+	13)Distributed log tracing using Spring Cloud Sleuth & Zipkin.
+	14)What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
+	15)What is ELK Stack [ Elastic Search | Logstash | Kibana ] for Centralize logging.
+	16)Service Registry [Euroka Server | Zookeeper] - Which contain Euroka Client
+	
+	17)What is CQRS vs CRUD. What is Alternative of CQRS Pattern[API composition]
+	18)What is SAGA [For Distributed Tranaction]
+	
+	
+
+
+------------------------------  AWS --------------------------------------------------------------------------------------------------------------------
+
+1) How will u authenticate JWT in Lambda.
+2) VPC 
+3) 
+	
 
 ----------------------------------- Design Pattern -----------------------------------------------------
+
+----------------- Creation --------------------------
 
 1) Singleton Design Pattern
 2) Factory Design Pattern
 3) Abstract factory Design Pattern  = What is Abstract factory pattern. When u will used abstarct factory.
 4) Builder Design Pattern
 
+---------------- Creation --------------------------
 5) Adopter Design Pattern
 
+---------------  Creation --------------------------
+
 6) Strategy Design Pattern 
-7) Template Design pattern
+7) Template Design Pattern
+8)
 
 
 --------------------------------------- DataBase -------------------------------------------------------
@@ -247,9 +282,11 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 10)What is difference between primary key and unique key.
 11)How many type of indexing in Oracle.
 12)Fecth 3 highest salry of employee.
+
 Ansh :  selct * from Emplyee order by salary desc Limit 2,1
 
 13)Find out the max salry of each deartment Employee.EmployeeId, departmentId [ Engg, QA, dev, mgmt ] , Salary.
+
 Ans: select max(salray),departmentId from Employee group by departmentId;
 
 14)Find out the salary of those employee whose salary is greather than manager. Employee [id , name, managerId]
@@ -257,7 +294,7 @@ Ans: select max(salray),departmentId from Employee group by departmentId;
 Ans: SELECT * FROM employees w,employees m
 	WHERE w.manager_id = m.emp_id
 	AND w.salary > m.salary  and m.role <> 'manager'
-
+	
 ----------------------------------- ReactJS Question ---------------------------------------------------
 
 1) What is High Level Component.
@@ -268,7 +305,7 @@ Ans: SELECT * FROM employees w,employees m
 '= ='   is used for comparison between two variables irrespective of the datatype of variable.
 '= = =' is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
 
-5) What is cros in react 
+5) What is CORS in react ?
 
 Ans :   res.header("Access-Control-Allow-Origin", "*");
 		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -280,10 +317,17 @@ Ans :   res.header("Access-Control-Allow-Origin", "*");
 10)What are the Higher Order Componenet in Reactjs.
 11)what is react hooks vs redux.
 12)What is the difference between class vs function in React.
-13)what is Pure Components in React
+13)what is Pure Components in React.
+14)  
+what will be the output of below program 
+sum(10)(20)  outut = 30
 
-
------------------------------------ JAVAScript Question -----------------------------------------------
+sum = (a, b) => {
+	console.log("output is ::" + (a+b)));
+}
+15) What will be the output of below line 
+	if(false === '0')
+----------------------------------- JAVAScript Question ------------------------------------------------------------
 
 5) What is Hoisting in java script.
 6) What is output of below program
@@ -320,4 +364,4 @@ CI : What does CI stand for? Continuous integration is when each newly created p
 CD : Continuous delivery is when the developers build the project step by step, and each phase can be delivered to the customer at any time. Source: 
 
 
-Cloud application services = AWS
+
