@@ -1,0 +1,135 @@
+git reset .gitignore .project .vscode/launch.json
+
+1) -------------------------Force to take Latest files ---------------------------------------------
+
+git fetch --all
+
+Then, you have two options:
+
+git reset --hard origin/master
+
+Create Branch and 
+git checkout -b Radiant-PI2-2021-S6
+
+2) Commit Files
+
+git commit -m "commit message"
+
+3) Updating a local repository with changes from a GitHub repository
+
+git pull origin master 
+OR git pull origin Radiant-PI2-2021-S6
+
+git push origin master 
+OR git push origin Radiant-PI2-2021-S6
+
+Proximus Git: 
+git clone git@gitlab.proximus.be:RSI/TVBEP_Interfaces.git
+
+git config --global http.sslVerify false
+
+4) Disable SSL : 
+git -c http.sslVerify=false clone <Path>
+
+npm run build
+
+git commit -m "BEP-20902:BEP-GUI: Develop new Access Point Variables screen for Enabler: Page Variables"
+
+http://hpggitlab.india.rsystems.com/hpg/bep-gui.git
+
+git@hpggitlab.india.rsystems.com:hpg/bep-gui.git
+User- dharmveer_lal
+PW-   naren123
+
+sysdm.cpl to configure envirment path 
+
+9818025087- Vibhav
+
+git commit -m "BEP-20902: BEP-GUI: Develop new Access Point Variables screen for Enabler: Page Variables"
+
+----------- Create new Branch and first commit -----------------------------------------------------------
+
+D:\self\AWS-Lambda-Example>git init
+D:\self\AWS-Lambda-Example>git branch -M main (If want to create Branch)
+D:\self\AWS-Lambda-Example>git remote add origin https://github.com/anshulrsi1234/AWS-Lambda-Example.git
+D:\self\AWS-Lambda-Example>git status
+D:\self\AWS-Lambda-Example>git add (file opath)
+D:\self\AWS-Lambda-Example>git commit -m "Adding first image"
+D:\self\AWS-Lambda-Example>git push -u origin main
+
+To https://github.com/anshulrsi1234/AWS.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/anshulrsi1234/AWS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git pull --rebase origin main
+
+git remote add origin https://github.com/anshulrsi1234/AWS.git
+
+git submodule add https://github.com/anshulrsi1234/AWS.git AWS-Lambda-Example
+
+
+git submodule add D:\Git\awsAWS-Lambda-Example
+=====================================================================================================================================
+
+Aga - 137078
+Consumer No:110299275
+SV ID  = 411 83 612 89
+LPG Id = 10000 0001 1029 9275
+pass : Welcome@1234
+
+-------------------- Voter Id Card ---------------------------------------------------------------------------------------
+
+1) Anshul = TZW0511790
+2) MOM  =   UP/84/413/0420487
+3) Ankur =  TZW0511808
+4) Ruchi =
+ 
+---------------------------------------------------------------------------------------------------------------------------
+
+Registration Number	:	HR02L7455
+Registration Date	:	2004-10-08
+Chassis Number	    :	MALAA51HR4M505111
+Engine Number		:	G4HD4D90589
+Fuel Type			:	PETROL
+Model/Model Name	:	SANTRO A C HTR EII
+Owner Name			:	ARVIND KUMAR
+Vehicle Class		:	MOTOR CAR(LMV)
+Insurance expiry	:	2020-02-26
+RTO Code			:	HR02
+Vehicle RTO			:	YAMUNA NAGAR
+
+
+git clone http://hpggitlab.india.rsystems.com/hpg/bep-gui.git
+
+C:\hpg-git\bep-gui>npm config set registry http://registry.npmjs.org/
+
+npm install --legacy-peer-deps
+
+git commit -m "BEP-21238 : BEP-GUI: Swimlane list screen changes for - BEP-GUI : Option to clone a swim lane"
+
+https://rsystemsiltd-my.sharepoint.com/:v:/g/personal/bhushan_gupta_rsystems_com/EfJWySB99GlBuuUnBHR1cbgBhrHuBxtglHHVDSL_VqHDkQ
+
+git commit -m "BEP-21521,BEP-25122,BEP-25123,BEP-21524"
+
+http://localhost:3000/#/accesspoint/update/NTE2ASinghal4/swimlanes
+
+
+
+AY069992552IN
+
+AY070266464IN
+
+
+
+
+
+
+
+
+
+
