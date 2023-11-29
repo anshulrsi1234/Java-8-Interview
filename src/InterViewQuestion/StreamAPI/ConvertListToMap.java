@@ -19,8 +19,6 @@ public class ConvertListToMap {
 		  new Employee("4", "Anshul-4","14","1004")
 	  );
 	  
-	 // Map<String, Employee> empMap = empList.stream().collect(Collectors.toMap(Employee::getId,e1 -> e1));
-	  
 	  Map<String, Employee> empMap = empList.stream().collect(Collectors.toMap(map -> map.getId(), map -> map));
 	  
 	  empMap.forEach((key,value) -> {
