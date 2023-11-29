@@ -26,6 +26,12 @@ public class Occurance {
 			}
 		}
 		
+		// OR 
+		
+		Map<Integer, Long> data = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		
+		System.out.println("Map data is " + data);
+		
 		//=============================== case 2 =========================================================================
 		
 		// Display data in List
@@ -41,10 +47,7 @@ public class Occurance {
 		.entrySet().stream().sorted(Map.Entry.<Integer,Long>comparingByValue().reversed()).collect(Collectors.toList());		
 		
 		System.out.println(">>>>>> Integer <<<<<<<< " + list);
-				
+
 		
 	}
-	
-	    
-
 }
