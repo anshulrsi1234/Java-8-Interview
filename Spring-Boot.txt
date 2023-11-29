@@ -1,0 +1,154 @@
+Q)What is SpringBoot and describe its benifit over spring OR Why we should used Spring boot.
+
+1)Spring Boot is an open-source tool that makes it easier for developers to create standalone digital products and production-ready spring applications including Java applications and web services.
+
+2)Spring Boot exists to give developers an extremely fast way to build and deploy applications and services. Those are two of the top advantages of Spring Boot.
+
+Advantages of Spring Boot: 
+
+1)Spring Boot works well with several servlet containers
+2)Bootstrapping saves memory space
+	Spring Boot uses Boot Initializer to compile the source language. This bootstrapping technique makes it possible for users to save space on their devices and load applications quickly.
+3)Decreased boilerplate code
+4)Easily develop ready-to-use Spring applications
+5)Reduce time to build and run the developed applications
+6)POM dependency management 
+	Spring Boot doesn’t force you to use a parent POM (project object model). Adding the spring-boot-dependencies artifact lets you manage dependencies without relying on a parent POM or XML file.
+7)A large Community of helpful users
+8)Envision an easier way to start the applications
+
+Disadvantages of Spring Boot: 
+
+Some of the most common complaints from developers include:
+
+1) Large deployment files that result from unused dependencies
+2) The long amount of time that it takes to replace legacy systems with Spring Boot applications
+3)Its inability to build large, monolithic applications (although it works extremely well for developing microservices)
+4) Needing to rely on the Spring ecosystem instead of using other tools that many developers find advantageous
+
+
+Q2) What is the difference between @Controller and @RestController.
+
+In Spring MVC, both @Controller and @RestController annotations are used to define web controllers as per MVC Design pattern. A controller is responsible for handling HTTP request and returning HTTP response to client.
+
+The main difference between these two annotation is how they handle client’s request and when they are used.
+
+@Controller annotation is there from day 1 and it is used to mark a class as a web controller to process HTTP requests and return a view name, which is then resolved by a view resolver to generate the final HTML view.
+
+@RestController annotation was added in later Spring version like Spring 3.4 to increase support for REST API development. In case of REST API, instead of returning HTML, you will probably like to return JSON or XML as your client is no more human but machine.If you want to return a JSON or XML from a Spring MVC controller then you need to add @ReseponseBody annotation to each of Controller method and it seems overkill while implementing REST APIs using Spring and Spring Boot.
+
+Designers and developers of Spring Framework recognized this shortcoming and then added a new annotation called @RestController in Spring 3.4 version.
+
+The @RestController annotation is a combination of the @Controller and @ResponseBody annotations and you can use it to implement REST APIs in Java and Spring Boot.
+
+The key difference between @Controler and @RestController annotation is @ResponseBody annotation, @Controler does not…
+
+If you want to return a JSON or XML from a Spring MVC controller then you need to add @ReseponseBody annotation to each of Controller method and it seems overkill while implementing REST APIs using Spring and Spring Boot.
+
+Designers and developers of Spring Framework recognized this shortcoming and then added a new annotation called @RestController in Spring 3.4 version.
+
+The @RestController annotation is a combination of the @Controller and @ResponseBody annotations and you can use it to implement REST APIs in Java and Spring Boot.
+
+The key difference between @Controler and @RestController annotation is @ResponseBody annotation, @Controler does not…
+
+Q) What is @EnableAutoConfiguration.
+
+1)The @EnableAutoConfiguration annotation enables the auto-configuration of Spring ApplicationContext by scanning the classpath components and registering the beans.
+2)@EnableAutoConfiguration is used to enable the auto-configuration feature.
+
+Spring Boot auto-configuration automatically configures the Spring application based on the jar dependencies that we have added.
+
+For example, if the H2 database Jar is present in the classpath and we have not configured any beans related to the database manually, the Spring Boot's auto-configuration feature automatically configures it in the project.
+
+
+OR
+
+@EnableAutoConfiguration annotation tells Spring Boot to “guess” how you want to configure Spring, based on the jar dependencies that you have added.
+
+Since the spring-boot-starter-web dependency added to classpath leads to configuring Tomcat and Spring MVC, the auto-configuration assumes that you are developing a web application and sets up Spring accordingly.
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+@SpringBootApplication = @EnableAutoConfiguration + @Configuration + @Componenets
+
+@EnableAutoConfigurationannotation :  is used to enable Spring Boot's auto-configuration feature, which automatically configures the application based on the classpath dependencies and other properties.
+
+13)How will u handle transaction in Spring Boot.(Important)
+	   [@Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
+	   
+Propagation in Tranaction: 
+
+	1)Propagation defines our business logic’s transaction boundary. Spring manages to start and pause a transaction according to our propagation setting
+	2) Spring calls TransactionManager::getTransaction to get or create a transaction according to the propagation.
+	3)It supports some of the propagations for all types of TransactionManager, but there are a few of them that are only supported by specific implementations of TransactionManager.
+	  
+Propagation has seven enumerations in Spring: 
+	  
+	   1) REQUIRED : REQUIRED is the default propagation. Spring checks if there is an active transaction, and if nothing exists, it creates a new one. Otherwise, the business logic appends to the currently active transaction
+	   
+			@Transactional(propagation = Propagation.REQUIRED)
+			//
+	   
+	   2) SUPPORTS :  For SUPPORTS, Spring first checks if an active transaction exists. If a transaction exists, then the existing transaction will be used. If there isn’t a transaction, it is executed non-transactional:
+
+			@Transactional(propagation = Propagation.SUPPORTS)
+			//
+		
+	   3) MANDATORY : When the propagation is MANDATORY, if there is an active transaction, then it will be used. If there isn’t an active transaction, then Spring throws an exception:
+
+			@Transactional(propagation = Propagation.MANDATORY)
+			//
+
+	   4)NEVER : For transactional logic with NEVER propagation, Spring throws an exception if there’s an active transaction:
+
+			@Transactional(propagation = Propagation.NEVER)
+			//
+			
+	   5)NOT_SUPPORTED : If a current transaction exists, first Spring suspends it, and then the business logic is executed without a transaction:
+			@Transactional(propagation = Propagation.NOT_SUPPORTED)
+			//
+			
+	   6)REQUIRES_NEW : When the propagation is REQUIRES_NEW, Spring suspends the current transaction if it exists, and then creates a new one:
+    	    @Transactional(propagation = Propagation.REQUIRES_NEW)
+			//
+	   7)NESTED : For NESTED propagation, Spring checks if a transaction exists, and if so, it marks a save point. This means that if our business logic execution throws an exception, then the transaction rollbacks to this save point. If there’s no active transaction, it works like REQUIRED.
+
+2) Isolation : Isolation is one of the common ACID  (Atomicity, Consistency, Isolation, and Durability)  properties.Isolation describes how changes applied by concurrent transactions are visible to each other.
+Each isolation level prevents zero or more concurrency side effects on a transaction.
+
+		a) Dirty read : read the uncommitted change of a concurrent transaction
+		b) Nonrepeatable read : get different value on re-read of a row if a concurrent transaction  	 updates the same row and commits
+		c) Phantom read : get different rows after re-execution of a range query if another transaction adds or removes some rows in the range and commits
+	   
+Isolation has five enumerations in Spring: 
+
+	   1)DEFAULT : The default isolation level is DEFAULT.We should also consider cases when we call a chain of methods with different isolation. In the normal flow, the isolation only applies when a new transaction is created
+	   
+	   2)READ_UNCOMMITTED : READ_UNCOMMITTED is the lowest isolation level and allows for the most concurrent access.
+	   
+	   3)READ_COMMITTED : The rest of the concurrency side effects could still happen. So uncommitted changes in concurrent transactions have no impact on us, but if a transaction commits its changes, our result could change by re-querying.
+	   
+		   @Transactional(isolation = Isolation.READ_COMMITTED)
+		   //
+	   Note : READ_COMMITTED is the default level with Postgres, SQL Server, and Oracle.
+
+	   4)REPEATABLE_READ : The third level of isolation, REPEATABLE_READ, prevents dirty, and non-repeatable reads. So we are not affected by uncommitted changes in concurrent transactions.
+	   
+	   when two or more concurrent transactions read and update the same row. REPEATABLE_READ does not allow simultaneous access to a row at all. Hence the lost update can’t happen.
+	   
+		   @Transactional(isolation = Isolation.REPEATABLE_READ) 
+	       //
+	   
+	   Note : REPEATABLE_READ is the default level in Mysql. Oracle does not support REPEATABLE_READ.
+	   
+	   5)SERIALIZABLE : SERIALIZABLE is the highest level of isolation. It prevents all mentioned concurrency side effects,but can lead to the lowest concurrent access rate because it executes concurrent calls sequentially.
+	   
+	   In other words, concurrent execution of a group of serializable transactions has the same result as executing them in serial.
+	   
+	      @Transactional(isolation = Isolation.SERIALIZABLE)
+		   // ...
+
+
