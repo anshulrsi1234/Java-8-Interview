@@ -16,10 +16,10 @@ public class FetchMaxNElement {
 		
 		List<Integer> listOfIntegers = Arrays.asList(11, 13, 9, 20, 7, 3, 30,90,20);
 		
-		Integer minValue = Collections.max(listOfIntegers);
-		Integer minIndex = listOfIntegers.indexOf(minValue);
+		Integer max_Value = Collections.max(listOfIntegers);
+		Integer maxIndex = listOfIntegers.indexOf(max_Value);
 		
-		System.out.println("Min Value :: "  + minValue  + " \t Min Index :: " + minIndex);
+		System.out.println("Max Value :: "  + max_Value  + " \t Min Index :: " + maxIndex);
 		
 		List<String> listOfString = Arrays.asList("blue", "Blue", "Java", "gem", "test", "Babu", "Zri");
 		Collections.sort(listOfString);
