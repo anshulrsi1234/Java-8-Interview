@@ -76,9 +76,16 @@ Since the spring-boot-starter-web dependency added to classpath leads to configu
 
 @EnableAutoConfigurationannotation :  is used to enable Spring Boot's auto-configuration feature, which automatically configures the application based on the classpath dependencies and other properties.
 
+
+
 13)How will u handle transaction in Spring Boot.(Important)
-	   [@Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
-	   
+
+ [@Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
+ 
+ What is Transaction :   transaction represents a single unit of work that must be performed atomically. Transactions ensure data consistency and integrity by providing the ability to undo changes if an error occurs
+	 
+What is Propagation :  Propagation is the ability to maintain the integrity of transactions when multiple transactions are running simultaneously. It defines how a transaction should behave when it is executed within the context of an existing transaction.
+	 
 Propagation in Tranaction: 
 
 	1)Propagation defines our business logic’s transaction boundary. Spring manages to start and pause a transaction according to our propagation setting
@@ -116,8 +123,7 @@ Propagation has seven enumerations in Spring:
 			//
 	   7)NESTED : For NESTED propagation, Spring checks if a transaction exists, and if so, it marks a save point. This means that if our business logic execution throws an exception, then the transaction rollbacks to this save point. If there’s no active transaction, it works like REQUIRED.
 
-2) Isolation : Isolation is one of the common ACID  (Atomicity, Consistency, Isolation, and Durability)  properties.Isolation describes how changes applied by concurrent transactions are visible to each other.
-Each isolation level prevents zero or more concurrency side effects on a transaction.
+2) Isolation : Isolation is one of the common ACID  (Atomicity, Consistency, Isolation, and Durability)  properties.Isolation describes how changes applied by concurrent transactions are visible to each other. Each isolation level prevents zero or more concurrency side effects on a transaction.
 
 		a) Dirty read : read the uncommitted change of a concurrent transaction
 		b) Nonrepeatable read : get different value on re-read of a row if a concurrent transaction  	 updates the same row and commits
@@ -150,5 +156,4 @@ Isolation has five enumerations in Spring:
 	   
 	      @Transactional(isolation = Isolation.SERIALIZABLE)
 		   // ...
-
 
