@@ -7,7 +7,7 @@
 5) Aggregation vs Composition
 6) Inheritance vs Association.
 
-// ============================ Java-8 =========================================================================
+// ============================ Java-8 ============================================
 
 1) Why Java 8 was introduces.
 
@@ -15,8 +15,8 @@ Ans : To support functional programing, To complete with Scala, Best Memory mana
    
 2) New feature of Java 8.
 
-Ans : Optional, Functional-Interface, Lambda , Garbage-Collector Improvements,Fork/Join Speed Improvements,Easy to  
-    Parallelize]
+Ans : Optional, Functional-Interface, Lambda , Garbage-Collector Improvements,Fork/Join Speed Improvements,
+	  Easy to Parallelize]
    
 3) How will you handle memory managment in Java 8.
 
@@ -208,9 +208,10 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 19)What is ForkJoin.[Divide and Concor problem.]
 20)Semaphore,Atomic variables.[Atomic Integer and when to used them]
 
-	* Semaphore        : Semaphores are more about resource management and controlling access to shared resources.
-	* Atomic variables : Atomic variables are about ensuring that specific operations on shared variables are performed 					atomically and without the need for explicit locking. Depending on the problem you're trying 
-	                     to solve, you might choose one or the other, or even both in combination.
+	* Semaphore        : Semaphores are more about resource management and controlling access to shared  
+	                     resources.
+	* Atomic variables : Atomic variables are about ensuring that specific operations on shared variables are 
+	                     performed 	atomically and without the need for explicit locking. Depending on the problem you're trying to solve, you might choose one or the other, or even both in combination.
 
 21)What is Transit[Doesn't Serialize] and Volatite [Stored and Read Value from Main Memory].
 22)What is Thread dump in Java.
@@ -224,7 +225,7 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	                   read-modify-write are performed atomically without requiring explicit synchronization.
 
 
-//========================= SignleTon and Enum.===================================================================
+//========================= SignleTon and Enum.=============================================
 
 1) What is difference Between Singlton vs Enum. Give the case where u will used them.
 2) What are the ways to break singleton (Clone, Serialization , Reflection class.forName()).
@@ -241,74 +242,11 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 =================================== Design Pattern ============================================
 
 
- ******************************** Creation *********************************************************
+ Kindly go to design pattern.txt to read kore about it.
  
-1) Singleton Design Pattern:
-
-  When u will used Singleton Pattern  :  When a class in your program should have just a single instance available to 										all clients
-
-2) Factory Design Pattern :
-
-  When should we use factory design pattern :  When we have a superclass with multiple sub-classes and based on input, 
-											   we need to return one of the sub-class
-											   
-3) Abstract factory Design Pattern  
-
- When u will used abstarct factory  :  1) When we want to expose only the interface of the collection of multiple  
-                                          objects and not the implementation.
-									   
-									   2) Abstract Factory Pattern is used by any client to create objects without 
-									      any background knowledge of the structure, composition, and architecture 
-										  of the system.
-4) Builder Design Pattern:   
-
- When u will used Builder Pattern  :  To create complex objects that have many optional parameters.
- 
-
-Q) What is the difference between builder pattern and factory pattern ?
-
-Ans:
-
-1) Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product  
-   objects (either simple or complex). 
-2) Builder returns the product as a final step, but in the Abstract Factory, the product gets returned immediately
-
-
- ******************************** Structure ********************************************************* 
-
-5) Adopter Design Pattern:
-
-When u will used Adopter Design Pattern  : To make existing classes work with others without modifying their source 
-										   code.The pattern involves creating an adapter class that bridges the gap between the interfaces, allowing them to communicate effectively
-
-when you need to integrate systems that have different or incompatible interfaces, such as legacy systems, third-party libraries, or external APIs
-
-Example:  I was working on a project where we had to call an API of an external system in order to calculate tax. The server expected information like zip code, product, price, quantity, etc to calculate the tax. But the bad thing was, it expected the data in XML format. XML and SOAP APIs are really really rare these days except in some banking applications or financial institutions. All our internal APIs expect JSON as input and return JSON as output. Now if we want to make a call to the external server, we have to convert the JSON data into XML format
-
-
- ******************************** Behaviour *********************************************************
-
-6) Strategy Design Pattern :
-
-When u will used Strategy Design Pattern : when we have multiple algorithms for specific task and we want our 		
-										   application to be flexible to chose any of the algorithm at runtime 
-										   for specific task
-
-7) Template Design Pattern
-
-When u will used Template Design Pattern =
-
-8)State Design Pattern:
-
-When u will used State Design Pattern :   
-
-Real life example of a state design pattern?
-
-Let's dive into a real-time example of the State Design Pattern by considering a mobile phone ringer. Mobile phones often have different ringer modes like “Silent”, “Vibration”, and “Ringing”. Depending on the mode, the behavior of an incoming call will differ.
-
-State Interface: 		This defines the behavior when there’s an incoming call.
-Concrete State Classes: These implement the State interface for “Silent”, “Vibration”, and “Ringing” modes.
-Context: 				This represents the mobile phone itself.
+ 1) What is Builder design pattern and when you will used Builder Design pattern.
+ 2) What is Factory design Pattern. Give us the real time usecase when you will used this.
+ 3) What is 
 
 
 ================================= Spring ===================================================================
@@ -401,6 +339,21 @@ Context: 				This represents the mobile phone itself.
 		Ans: By Implmenting the BeanPostProcessor interface
 		 
 =================================== Microservice ===================================================== 
+
+1)1)What is 12 factor of Microservice. [3 | CDK , CRIS, Altimetrik]
+
+	1)Codebase
+	2)Dependencies
+	3)Config
+	4)Backing Services
+	5)Build + Release +Run
+	6)Processes
+	7)Port Binding
+	8)Concurrency
+	9)Disposability
+	10)Dev/Prod Parity
+	11)Logs
+	12)Admin Processes
 	
 1) Defined the Architecture of Microservice. (Important)
 2) What is the component of Microservice .
@@ -453,6 +406,13 @@ Context: 				This represents the mobile phone itself.
 6) What is Kafka Lag
 7) What is the need of Kafka zookepper. || To support distributed instance environment.
 
+3) In Kafka , What is the difference between Topic and partision.
+4) How will you ensure that message atleast should be consume by once.
+5) Are you aware delivery semnatics.
+6) Can we control through configuration like that message has to be read twice or thrice.
+7) What is DLQ(Dead Queue) in Kafka.
+8) What is compaction Lag in Kafka.
+
 
 =================================== AWS =================================================================
 
@@ -472,15 +432,14 @@ Context: 				This represents the mobile phone itself.
 11) What is 'Partition Key'.
 12) What all services you have used in AWS so far. APIGateWay | S3 | SNS | SQS |
 
-13) What is S3.In production how you will share file over there , will you write any program or any other program 
-    will write.
+13) What is S3. In production how you will share file over there , will you write any program or any other program will write.
 14) Does S3 support the vertical and Horizontal scaling ?
 
 15) What is AWS API gate way. Which all other services you have used so far.
 16) What is the Throughput of API Gateway.i.e In Particular defined time how many time API gateways can be access.
 
-17) What is SNS. What all step do I mentioned to send email vis SNS. 
-    Suppose I want to send email what all do I need to required to send mail.
+17) What is SNS. What all step do I mentioned to send email vis SNS. Suppose I want to send email what all do I need to  
+    required to send mail.
 
 18) What is sign-URL . What is benifit of subscribe.
 
@@ -520,6 +479,25 @@ Ans: SELECT * FROM employees w,employees m
 Select * from Emplaoyee
 group by name 
 having count() >1
+
+16) Select name and manager name from below query.
+ 
+Example:
+ 
+ID    NAME 	        MANAGERID
+1     Harish      	
+=============================================
+2     ManiRathnam      1
+ 
+OutPut :  
+ 
+Hari,         null
+ManiRathnam,  Harish
+
+
+Select e.name as name , m.MANAGERID as ManagerName
+FROM Employee e 
+LEFT JOIN Emplyee m on e.ID = m.MANAGERID
 
 ======================================== Git ===============================================
 
