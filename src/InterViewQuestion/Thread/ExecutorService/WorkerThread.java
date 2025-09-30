@@ -1,4 +1,4 @@
-package InterViewQuestion.ExecutorService;
+package InterViewQuestion.Thread.ExecutorService;
 
 public class WorkerThread implements Runnable {
 	private String message;

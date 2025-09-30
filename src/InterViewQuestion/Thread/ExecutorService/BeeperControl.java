@@ -1,4 +1,4 @@
-package InterViewQuestion.ExecutorService;
+package InterViewQuestion.Thread.ExecutorService;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 

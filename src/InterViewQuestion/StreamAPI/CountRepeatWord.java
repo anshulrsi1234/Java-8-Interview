@@ -24,9 +24,9 @@ public class CountRepeatWord {
 		System.out.println(newStringList);
 		
 		int [] arr = {1,2,3,4,5,6,2,5,4,7,8,9,5,7,1};
+		
 		// Convert arrays to List of Integer.
-		List<Integer> list_1 = Arrays.stream(arr).boxed().collect(Collectors.toList());
-		Map<Integer, Long> newList_  = list_1.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		Map<Integer, Long> newList_  = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
 		System.out.println(" <<<<< newList_ >>>> " + newList_);
 		 

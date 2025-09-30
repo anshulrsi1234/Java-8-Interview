@@ -1,4 +1,4 @@
-package InterViewQuestion.CountDownLatchAndBarrier;
+package InterViewQuestion.Thread.CountDownLatchAndBarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

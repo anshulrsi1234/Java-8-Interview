@@ -1,4 +1,4 @@
-package InterViewQuestion.CountDownLatchAndBarrier;
+package InterViewQuestion.Thread.CountDownLatchAndBarrier;
 
 //Java Program to demonstrate how
 //to use CountDownLatch, Its used

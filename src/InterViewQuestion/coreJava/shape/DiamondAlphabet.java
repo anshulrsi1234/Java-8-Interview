@@ -1,4 +1,4 @@
-package corejava.shape;
+package InterViewQuestion.coreJava.shape;
 
 /**
  * 

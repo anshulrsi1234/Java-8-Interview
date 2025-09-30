@@ -1,4 +1,4 @@
-package InterViewQuestion.ExecutorService;
+package InterViewQuestion.Thread.ExecutorService;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

@@ -11,8 +11,8 @@ public class Stream {
 		
 		List<String> list = Arrays.asList("user:21","user:22","user:23","user:24");
 
-		List<String> sum = list.stream().map(i -> i.split(":")[1]).peek(System.out::println).collect(Collectors.toList());
+		List<String> intValue = list.stream().map(i -> i.split(":")[1]).peek(System.out::println).collect(Collectors.toList());
 		
-		System.out.println(sum);
+		System.out.println(intValue);
 	}
 }

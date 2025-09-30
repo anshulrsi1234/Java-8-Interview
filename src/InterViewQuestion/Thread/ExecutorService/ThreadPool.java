@@ -11,6 +11,7 @@ public class ThreadPool {
 	public static void main(String[] args) {
 		
 		Executor ec= Executors.newFixedThreadPool(10);
+		
 		ExecutorService executors = Executors.newFixedThreadPool(4);
 		
 		//Use Submit if response required. OR Used Submit when you need any response
