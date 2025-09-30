@@ -1,48 +1,23 @@
------------------------- AWS Code Location -------------------------------------------------------------------------
-Pradhan Mantri Vaya Vandana Yojana(PMVVY)
-
----------------------------Topic Need to cover-------------------------------------------------------------------
-No Topic		 :  Time
----------------------------------------------------------------------------------------------------------
-1) Writes-UP     :  (8-9 AM )
-2) AWS           :  (10-11 AM)
-3) Spring-Boot   :  (12-1 PM )
-
-----------  Launch (1-3 PM )  ---------------------------------------------------------------------------
-
-4) Micro-Service :  (3-4 PM )
-5) Excel-Training:  (4-5 PM )
-6) Stream-API    :  (09-10 PM) Once finish then Design Pattern.
-7) React-JS	     :  (10-11 PM)
-
----------- Must Have in your CV ------------------------------------------------------------------------
-
-1) Cloud Technology    = AWS 					  | 
-2) Communication skill = Writing Skill + Communication Skill + Listening Skill + Soft Skill
-3) Office Skill        = Excel + Office + PowerPoint
-4) AI or ML (Machine Learning)
-
-https://mylambdaproject.s3.us-west-2.amazonaws.com/MyAWSLambdaExample-1.0.0.jar
-
-
-Zoom:  anshul7_singhal@rediffmail.com/Welcome@123
-
-
-----------------------AWS Service ---------------------------------------------------------------------------------------------------
+------------------------- AWS Service ----------------------------------------------------------------------------
 
 1)  AWS APIGatway [ Having detail of API method GET/POST/OPTION/ ]
-2)  AWS Lambda [ Java8, NodeJS, Python] [FAAS] = It is a function which is fired on any event. It is also said 'function-as-a-service'.
+2)  AWS Lambda [ Java8, NodeJS, Python] [FAAS] = It is a function which is fired on any event. It is also said 	
+	'function-as-a-service'.
 3)  AWS S3 Bucket [Like C or D Hard drive] 
 4)  AWS DynaoDB [ Amazon Data base] 
 5)  AWS Cognito Pool [For User Inforamtion and User entry]
-6)  AWS CloudWatch [service which is a monitoring service/ Serah For Log] : You can create alarms that watch metrics and send notifications or 					   automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU  	 		     	 usage and disk reads and writes of your Amazon EC2 instances and then use that data to determine whether you should launch  					additional instances to handle increased load. You can also use this data to stop under-used instances to save money.
+
+6)  AWS CloudWatch [service which is a monitoring service/ Serah For Log] : You can create alarms that watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use that data to determine whether you should launch additional instances to handle increased load. You can also use this data to stop under-used instances to save money.
+
 7)  AWS CloudTrail
 8)  AWS IAMS
-9)  AWS CloudFormation :  AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing 						   those resources and more time focusing on your applications that run in AWS. You create a template that describes all the 						  AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of  						provisioning and configuring those resources for you
+
+9)  AWS CloudFormation :  AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS. You create a template that describes all the  AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you
+
 10) AWS SNS (Simple Notification Service) and SQS : 
 11) AWS SAM Local (Spring Boot):
 
----------------------------------------------- Advance AWS  --------------------------------------------------------------------
+---------------------------------- Advance AWS  ------------------------------------------------------
 
 1) AWS VPC (Virtual Private Cloud)
 2) AWS EC2 [Project hosting on Linux or Unix/ Create Complete Project Infra-structure] : 
@@ -58,7 +33,7 @@ Zoom:  anshul7_singhal@rediffmail.com/Welcome@123
 								1) Elastic Beanstalk is a service for deploying and scaling web applications and services. 
 								   Upload your code and elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, and auto scaling to application health monitoring
 							 ]
-====================================== -- Part 2 ---- ==============================================================================
+====================================== -- Part 2 ---- =================================================
 
 1) AWS MediaLive, Elimatal Media Package, Media Convert,Media Trail  [Video]
 2) AWS CodeCommit [For Code check-in and Check-out]
@@ -72,64 +47,11 @@ Certificate  : 1) AWS Certified Developer Associate
 
 Start873?Start873!&&
 
--------------------------------------------AWS LocalDB --------------------------------------------------------------------------------------
+------------------------------------------ AWS LocalDB ------------------------------------------------
 
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 5798
 
--------------------- GUI FrameWork Technology -------------------------------------------------------------------------
-
-Mobile = React + Ionic
-
------- ---------------------------   Docker Image ---------------------------------------------------------------------
-
-
--------------  To create image -------------------------------
-
-docker build -t spring-boot-image:9.0 .
-
---------Remove/untagged  Image from docker ------------------------------------------
-
-docker tag bb38976d03cf anshul32615/verse_gapminder
-
---------Push image from Docker ------------------------------------------------------
-
-docker push anshul32615/dockerkubernate:spring-boot-image
-
---------Pull image from Docker ------------------------------------------------------
-
-docker image pull anshul32615/docker-repository:11.0
-
---------Rename Container name -------------------------------------------------------
-
-docker rename romantic_chaum spring-boot-Container7
-
---------To run Docker Image --------------------------------------------------------
-
-docker run --name spring-boot-container4 -p 8080:8080 -t spring-boot-image:6.0
-
----- To run same image on multiple container ---------------------------------------
-
-docker run --name spring-boot-Container5 -p 8081:8080 -t spring-boot-image:2.0
-
-docker run -p port:port test2
-
-
-----Deploy image in Kubernate cluster/Container ------------------------------------
-
-kubectl create deployment spring-boot-9 --image=spring-boot-image:9.0 --port=8080
-
-
-kubectl create deployment spring-boot-10 --image=spring-boot-image:10.0 --port=8080
-
-kubectl get deployment
-
-kubectl describe deployment
-
-kubectl get pods
-
-When 2 POD (Replica=2) for same Deployment
-kubectl port-forward pods/spring-boot-9-65f588589c-8mzwk 8080
-kubectl port-forward pods/spring-boot-9-65f588589c-4wdlt 8081:8080
-
-
 AWS Lambda : It is an AWS serverless computing service offered by Amazon Web Services that runs the code in response to events and automatically manages the compute resource.
+
+What is Throttling : 
+

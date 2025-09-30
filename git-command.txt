@@ -2,50 +2,62 @@ git reset .gitignore .project .vscode/launch.json
 
 1) -------------------------Force to take Latest files ---------------------------------------------
 
-git fetch --all
+          git fetch --all
+          
+          Then, you have two options:
+          
+          git reset --hard origin/master
+          
+          ----- Create Branch of name 'Radiant-PI2-2021-S6 ' and get all code into this branch ------
+          git checkout -b Radiant-PI2-2021-S6
+          
+          ------------ To take/clone code from 'development' branch--------------------------------
+          git clone -b develop https://github.com/SundeepK/CompactCalendarView.git
+          
+          ------------ To take code from 'release/uat' branch--------------------------------
+          git clone -b release/uat https://anshulsinghal4@bitbucket.org/tmx-techlogix/systems-integrations.git
 
-Then, you have two options:
-
-git reset --hard origin/master
-
-Create Branch and 
-git checkout -b Radiant-PI2-2021-S6
+          ------------- use 
+          git branch (to get all branches from reposotory)
+          git use branch branch_name
 
 2) Commit Files
 
-git commit -m "commit message"
+          git commit -m "commit message"
+          
+          example : git commit -m "BEP-20902:BEP-GUI: Develop new Access Point Variables screen for Enabler: Page Variables"
+          
 
 3) Updating a local repository with changes from a GitHub repository
 
-git pull origin master 
-OR git pull origin Radiant-PI2-2021-S6
+--------------  Pull the code to orgin -------------------------------
 
-git push origin master 
-OR git push origin Radiant-PI2-2021-S6
-
-Proximus Git: 
-git clone git@gitlab.proximus.be:RSI/TVBEP_Interfaces.git
-
-git config --global http.sslVerify false
+          git pull origin master 
+          OR git pull origin Radiant-PI2-2021-S6
+          
+          ---------  Push the code to orgin -----------------------------------
+          git push origin master 
+          OR git push origin Radiant-PI2-2021-S6
+          
+          Proximus Git: 
+          git clone git@gitlab.proximus.be:RSI/TVBEP_Interfaces.git
+          
+          git config --global http.sslVerify false
 
 4) Disable SSL : 
-git -c http.sslVerify=false clone <Path>
 
-npm run build
+          git -c http.sslVerify=false clone <Path>
+          
+          5)To configure envirment path 
+          sysdm.cpl 
 
-git commit -m "BEP-20902:BEP-GUI: Develop new Access Point Variables screen for Enabler: Page Variables"
+---------------------  Git reposotory URL -----------------------
 
 http://hpggitlab.india.rsystems.com/hpg/bep-gui.git
 
 git@hpggitlab.india.rsystems.com:hpg/bep-gui.git
 User- dharmveer_lal
 PW-   naren123
-
-sysdm.cpl to configure envirment path 
-
-9818025087- Vibhav
-
-git commit -m "BEP-20902: BEP-GUI: Develop new Access Point Variables screen for Enabler: Page Variables"
 
 ----------- Create new Branch and first commit -----------------------------------------------------------
 
@@ -66,42 +78,16 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-git pull --rebase origin main
+-------------- Create rebase ---------------------------------------------
+1) git pull --rebase origin main
 
-git remote add origin https://github.com/anshulrsi1234/AWS.git
+2) git remote add origin https://github.com/anshulrsi1234/AWS.git
 
-git submodule add https://github.com/anshulrsi1234/AWS.git AWS-Lambda-Example
+3) git submodule add https://github.com/anshulrsi1234/AWS.git AWS-Lambda-Example
+4) git submodule add D:\Git\awsAWS-Lambda-Example
 
 
-git submodule add D:\Git\awsAWS-Lambda-Example
-=====================================================================================================================================
-
-Aga - 137078
-Consumer No:110299275
-SV ID  = 411 83 612 89
-LPG Id = 10000 0001 1029 9275
-pass : Welcome@1234
-
--------------------- Voter Id Card ---------------------------------------------------------------------------------------
-
-1) Anshul = TZW0511790
-2) MOM  =   UP/84/413/0420487
-3) Ankur =  TZW0511808
-4) Ruchi =
- 
----------------------------------------------------------------------------------------------------------------------------
-
-Registration Number	:	HR02L7455
-Registration Date	:	2004-10-08
-Chassis Number	    :	MALAA51HR4M505111
-Engine Number		:	G4HD4D90589
-Fuel Type			:	PETROL
-Model/Model Name	:	SANTRO A C HTR EII
-Owner Name			:	ARVIND KUMAR
-Vehicle Class		:	MOTOR CAR(LMV)
-Insurance expiry	:	2020-02-26
-RTO Code			:	HR02
-Vehicle RTO			:	YAMUNA NAGAR
+======================== Code Setup of swimlane =======================================================
 
 
 git clone http://hpggitlab.india.rsystems.com/hpg/bep-gui.git
@@ -118,11 +104,6 @@ git commit -m "BEP-21521,BEP-25122,BEP-25123,BEP-21524"
 
 http://localhost:3000/#/accesspoint/update/NTE2ASinghal4/swimlanes
 
-
-
-AY069992552IN
-
-AY070266464IN
 
 
 

@@ -1,6 +1,6 @@
-================================ Inter View Question Ask By Company Java =============================================
+=================== Inter View Question Ask By Company Java =====================
 
-================================= Espire Info Lab ====================================================================
+============================== Espire Info Lab ===============================
 
 1)  How compiler execute the lambda expression. OR How Compiler Know this is Lamba Expression.
 2)  What are the Anomonus function of Lambda Expression. - > Runnable , Callable , Function , Predicate, consumer
@@ -16,7 +16,7 @@ s = s.filter(a -> {
     }
 });
 
-Optional.ofNullable(gradesList.get(studentName)).map(list -> list.stream().collect(Collectors.averagingDouble(x -> x)))
+list.stream().collect(Collectors.averagingDouble(x -> x)))
    .orElseThrow(() -> new Exception("Student not found - " + studentName));
 
 6)  How will u defined singleton.
@@ -25,23 +25,23 @@ Optional.ofNullable(gradesList.get(studentName)).map(list -> list.stream().colle
 9)  What is diffeence between truncate and Delete.
 10) What is difference between sleep and wait.
 11) What is Reentrant Lock in Thread.
-12) CountDownLatch vs CyclicBarrier  = Important
+12) CountDownLatch vs CyclicBarrier . Give the scnario where you will used both.
 13) Any Other Design Pattern. 
 14) What is Mutable.
 
-========================================= Capgemini ==============================================================
+============================= Capgemini ==================================
 
 1) What is difference between Stmt and prepad Stmt.
 2) How Will you prevent SQL Injection in DB.
 
 
-======================================== Adsp Technology ========================================================
+=========================== Adsp Technology ================================
 
 1) Difference Between @Component and @Service.
 2) Difference Between @RestController and @Controller.
 3) Any Design Pattern.
 
-======================================== Harman Technology========================================================
+========================== Harman Technology=================================
 
 1) What is the difference between callble and runnable. Write a code to implement this.
 2) What is the difference between depency injection and Autowire.
@@ -49,28 +49,29 @@ Optional.ofNullable(gradesList.get(studentName)).map(list -> list.stream().colle
 4) What is CountDown Latch
 5) How will u mock the Class.
 6) What is singleon class
-7) What is Builder Design pattern . 
+7) What is Builder Design pattern . When Will used.
 8) Can we created the object the interface - NO
 
 The mutable objects are objects whose value can be changed after initialization. We can change the object's values, such as field and states, after the object is created. For example, Java.util.Date, StringBuilder, StringBuffer, etc.
 
 
-=========================================  Tsys ==================================================================
+================================= Tsys ======================================
 
 1) Suppose u have a collecion so would u like the for loop or iterator. (iterator)
 2) What is fail first and fail safe(ConCurrent Modification Exception) in java.
 3) what is optimistic locking in java
 4) what is static code analyzer.(Sonar quble).
 5) Why we required capcha code in the application.
-6) Suppose my application have too many if else block ,then what should be the alternative of this case if-else case. OR how we can mae this application loosly couple.
+6) Suppose my application have too many if else block ,then what should be the
+   alternative of this case if-else case. OR how we can mae this application loosly couple.
 7) What is qualifier bean in spring.
-8) what is docker and kubernative (container enginer you have used).
-9) Suppose u have 10 micro services , 
+8) what is docker and kubernative.(container enginer you have used).
+9) Suppose u have 10 micro services. 
 10)What is Atomic Integer and Atomic Variables.
-11)What is difference between throughput and response time.
+11)What is difference between throughput and response-time.
 
 
-=============================================  RxLogic ===========================================================
+==============================  RxLogic ======================================
 
 1)What is functional Interface and what is used of functional 
 2)what is adopter design pattern. 
@@ -84,7 +85,7 @@ The mutable objects are objects whose value can be changed after initialization.
 10)How to merge thread and find out which thread is lock.
 11)Example out of memory.
 
-========================================== HCL Interview (4 Dec 2021) ============================================
+========================== HCL Interview (4 Dec 2021) ========================
 
 1) What is best pratic to implement the microservice.
 2) Do u have any caching mechnisum in microservice.
@@ -96,7 +97,7 @@ The mutable objects are objects whose value can be changed after initialization.
 	Executor ec = Executors.newFixedThreadPool(10);
 	ExecutorService executors = Executors.newFixedThreadPool(4);
 
-============================================  Cofors =============================================================
+============================= Cofors =========================================
 
 1) What is difference between finalize and dispose.
 2) Thread Scheduler and Time Slicing in Java.
@@ -104,15 +105,16 @@ The mutable objects are objects whose value can be changed after initialization.
 4) What is Difference Trigger and procedure.
 5) What is Joins.
 6) How can we call sync method.
-7) We can override static Method.
+7) We can override static Method.=  NO
 8) Spring Cloud, What is the Architecture of Spring API .
 9) Suppoose a microservice call another microservice and other call micro Serviceand so on. So how can we know where is error.
-10)What is Zipkin and what is Zuul .
-11)What is AOP and where u have used the AOP.What is Advice and their Type.
+10)What is Zipkin and what is Zuul (API Gateway).
+11)What is AOP and where u have used the AOP. What is Advice and their Type.
 12)How will externalized the microservice configuarion file.
+13)How to create Custom ArrayList.
+14)Create Singleton class with reflection. 
 
-
-============================================= Unknown ============================================================
+============================= Unknown =========================================
 
 1) How caching work in Spring Boot and Why do we need the cache.
 2) How API Versioning is best pratice and if yes, then why will you go for that.
@@ -120,7 +122,7 @@ The mutable objects are objects whose value can be changed after initialization.
 4) Every java class a main method. So it is actually runing a thread. Where Do u implement runnale . It is run by JVM . How do u know it is executing as a main method is executing as thread.
 5) what is difference between calling t.run() vs t.start() 
 
-=========================================== Unknown Company ======================================================
+========================== Unknown Company ======================================
 
 1) What is diffrence Compostion and Aggreation.
 2) What is SOLID Principle.
@@ -130,7 +132,7 @@ The mutable objects are objects whose value can be changed after initialization.
 6) What is Higher Order Componenets in React ( Higer Order and Pier Componenet)
 7) 2,33,444,5555,6666,77777. ( No In-Built function / no String operation /  
 
-=========================================== Espire Info Lab =====================================================
+========================== Espire Info Lab =====================================
 
 1) How will tarce all log activity of all microService.
 2) What is Service Discovery and what client u have used for that.
@@ -140,13 +142,14 @@ The mutable objects are objects whose value can be changed after initialization.
 6) What is Serialization. 
 7) What is API gateways.
 8) What is authenication and Authorization.
-9) How can I achive Centeralized Logging in microservice (Via Zipkin)
+9) How can I achive Centeralized Logging in microservice (Via ELK)
 10)How will u manage configuarion of 10 central Microservice (Read About Config Server)
 11)What is Service Discovery and How it integrate with API GateWay and why it is needed.
-12)Supose you have 3 instance of your microservice ,What then how API gateways know Which Service Instance we need to call.
+12)Supose you have 3 instance of your microservice,then how API gateways know Which   
+   Service Instance we need to call.
 13)What is actuator.
 
-========================================== Go Digit[6-Dec-2021] =================================================
+========================= Go Digit[6-Dec-2021] =============================
 
 1)  What is Composition in java.
 2)  What is Aggreagtion.
@@ -157,25 +160,27 @@ The mutable objects are objects whose value can be changed after initialization.
 7)  What is Thread Tump in Java.
 8)  Life Cyclic of Thread.
 9)  Why we used concurrentHashMap.
-11) Java 8 new Feature [Option,Functional Interface,Lambda,Memory Management , Stream API]
+11) Java 8 new Feature [Option,Functional Interface,Lambda,Memory Management, Stream API]
 12) Why we used Function Interface.
 13) What is Difference between Map and FlatMap.
 14) What is Stream and how it is different form collection.
-15) Scope of Bean ( Singleton ,Prototype ,sesion)
+15) Scope of Bean ( Singleton ,Prototype ,sesion, request, global sesion)
 16) What are the diffrent ways to configure the Beans.
 17) what does @EnableAutoConfiguartion do.
-18) 5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery)
+18) 5 Component of SpringBoot : 	 		   
+	(Acutator,APIGateWay,ServiceDiscovery,ServiceRegistry,Hystric Server)
 
-============================================= CRIL ===============================================================
+=============================== CRIL ==========================================
 
-1) What is DI and without DI. Wha What is alternative in Java (@inject)
-2) Suppose we have thread and we want one all thread works finished, then only main thread will execute. So how how will u do that (Cyclic Barrier).
-3) CDI Injection framework.
-4) What is the alternative of EJB 3.
+1) What is DI and without DI. What is the alternative of DI in Java (@inject)
+2) Suppose we have thread and we want once all thread works finished, then only main thread will execute. So how will u do that (Cyclic Barrier).
+3) CD/CI Injection framework.
+4) What is the alternative of EJB 3.(Hibernate)
 5) What is Abstract factory pattern. When u will used abstarct factory.
-6) Where is sigleton will used. What is the difference Singleton connection object vs ConnectionPool.
+6) Where is sigleton will used. What is the difference Singleton connection object vs   
+   ConnectionPool.
 
-=====================================================================================================================
+============================== UnKnown ========================================
 
 1) What is final.
 2) How Polymorphisum implemented in appliaction.
@@ -194,23 +199,14 @@ The mutable objects are objects whose value can be changed after initialization.
 15)What is advantage to used hibernate.
 16)Why do u need the Sping frameWork.
 
-=============================================== EY ==============================================================
+================================ EY ============================================
 
 1) How to make List unmodified.
 2) How to sort a map based on their value.
 3) Suppose a 10 GB of file. How will u process the file.
 4) I want to fetch all those employee whose salary is greather than their manager.
 
-=========================================== Sociey General ======================================================
-
-----> L2 Round
- 
-1) Convert List<Employee> to Map  where map key is wil be EmployeeId
-
-Ans :  Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Employee::employeeId,Function.identity());
-
-2) Create your custom Iterator which will give u even number
-3) Find out the higest salary of Employee of each department.
+============================= Sociey General ===================================
 
 ----> L1 Round
  
@@ -219,7 +215,17 @@ Ans :  Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Em
 3)  You have List<employe> , Now I want to convert list to map and key of Map should be EmployeeId.
 4)	What is difference Between Requestparm and PathVariable in Spring Boot.
 
-========================================= Hexaware Technology ===================================================
+
+----> L2 Round
+ 
+1) Convert List<Employee> to Map  where map key is wil be EmployeeId
+
+Ans :  Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Employee::employeeId,Function.identity());
+
+2) Create your custom Iterator which will give u even number.
+3) Find out the higest salary of Employee of each department.
+
+======================== Hexaware Technology ===================================
 
 1) What is DeadLock.How to resolve the deadlock condition.
 2) what is CountDownLatch and CyclicBarrier.
@@ -229,16 +235,15 @@ Ans :  Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Em
 6) Convert List to Map.
 7) What is Strategy design pattern and Template design pattern.
 8) Difference HashMap and LinkedhashMap.
-7) Design pattern used in MicroService .
+7) Design pattern used in MicroService .[API GateWay, Circuit Breaker, CQRS]
 8) What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
-9) What is Distributed Tracing in MicroService.
-10)How to Defined Global exception.
+9) What is Distributed Tracing in MicroService.[Zipkin, Seulth]
+10)How to Defined Global exception.[@ControllerAdvice]
 11)What is cross origin.
 12)What is profile in Spring Boot.
 13)If u want to schedule the job , then how will u do that.
 14)What is difference between delete and Truncate.
-15)What is Cross join.
-16)Tell me how will u used JNDI lookup in application.
+15)Tell me how will u used JNDI lookup in application.
 17)Write Down a code to print this output.
 
 *
@@ -257,7 +262,7 @@ Ans :  Map<Int,Employee> map = employeeList.stream().collect(collectors.toMap(Em
 * *
 *
 
-============================================ American Express====================================================
+======================= American Express  ======================================
 
 1) What is SOLID Principle of Java. Expalned with example.
 2) What is the output of below program.
@@ -312,44 +317,188 @@ var b = function(){
     console.log("b");
 }
 
-========================================  UI Interview ============================================================
+============================Savir Software [3-Jan-2024]======================================================================
 
-========================= HTML/Angluar =============================================================================
+1) What is Commit offset in Kafka.
+2) what is CompletableFuture in java 8 and what is good use case of CompletableFuture.
+3) What is promise in JavaScript. [ Like future in java]
+4)
 
-1) what is Prototype .
-2) What is BootStrap and what is the benifit of bootStrap.
-4) What is Display : None and Visibly : hidden in Css
-5) What is difference between HTML and HTML5.
-6) If you want to load and play video then what will you do.
-7) what is Observale. and 
-8) what is Zindex.
-9) what is difference div and span.
-10)What is doctype in HTML.
-11)what is react hooks vs redux
+========================   Cofors [3-Jan-2024] ==============================
 
+1) How to create custom arrayList without any in built method.
+2) Create a singleton class to prevent from reflection API.
+3) Could you please explain me about Reflection and where will we used reflection. What is reflection
+4) I have a list of Employee Object and I want to process it to server. Now I'm have two data-structure in handy one is ArrayList and LinkedList. Which data Structure you will choose and why.
+   
+5) Suppose we have a 100 employee object in both data structure. Now suppose If I want to delete the first element from both of them. Can you please explain what is deletion time complexity of both data-structure. 
 
-RESTFul webservices : 
+6) What is complexity of LinkedList and ArrayList while deleting and adding in middle. 
 
+7)What is Bean factory and Application Context . Tell me when you will used Bean-factory and when will used Application Context.
 
-===========================================================================================================
+8)What is attribute of Transaction.
+  
+   
+=========================== CBRE [3-Jan-2024] ==================================
 
-
-http://learnfromexamples.com/transient-variable-vs-static-variable-in-java/
-
-
-
-
-
-
-
-
-
-
+1) Suppose 1 producer send message to topic and there 5 consumer to consume that topic. Now I want that message will be 
+   consume by particular consumer [A] , How will you do in Kafka.
+2) Difference between @component and @configuration.
+3) Suppose you have multiple microservice (A, B, C, D) . A -> b-> c . Suddenly exception occurred then what will you do.
+4) What is the difference between Map and Flat-Map.
+5) When you will used SQL and NO-SQL DB.
 
 
+===========================  Moder Solutions [28-May-2024] ===================================
+
+1) If you are using optional, then when NULL pointer exception will occurred.
+2) What is importance of static method in functional interface. Give me the case when you will used the static method of functional interface.
+3) What is new in HashMap java 8. Internal working of HashMap in java 8.
+4) Builder design pattern with example. If Builder design pattern is immutable so how can construct the object.
+5) What is decorator design pattern. give the example of decorator design pattern
+6) What is bridge design pattern.
+7) What is Proxy design pattern.
+8) What is try | Resource in java 7.
+9) What is String immutable.
+10) Print the String in reverse order without java 8.
+11) What is volatile in java. How volatile functionality work. Where volatile variable store [ heap, stack or main memory].
+       Is main memory outside JVM or not.  | Yes , Main memory is outside the JVM
+
+======================================  Vitrulsa[ 19 June 2024]  =======================================================
+
+1) If I have 3 Bean. And I want these 3 Bean execute /load sequentially. Then How we can achieve this.  (@DependsOn({"bean1", "bean2"}))
+2) If I don’t want to autoconfiguration, I want to My configuration, then how I can do this. [@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class,  
+          WebMvcAutoConfiguration.class, ErrorMvcAutoConfiguration.class })]
+		  
+3) Suppose you have 100 of Rest Controller and I want to print each request and response , so how we can achieve this. [Interceptor) preHandle() |postHandle() |afterCompletion ]
+
+4) Suppose Container load the bean and before it is not used by any client or component, we want to modify the bean . How we can do that. [Spring's BeanPostProcessor interface]
+
+5)  What is Thread Local and what is Atomic variable.
+
+	• Thread Local:       Provides thread-local variables, where each thread has its own independently initialized instance of the variable.
+	• Atomic Variable: Provides thread-safe operations on shared variables, ensuring that operations such as read-modify-write are performed atomically without requiring explicit synchronization.
+
+5) What is the need of kafka zookepper. || To support distributed instance environment.
+6) What is functional Interface and what is predicate.
+7) When OutofMemoryException Occurred.
+8) Improvement in java 8 Memory management .
+9) What is self-Join.
+
+================================= Spice Money [20-June-2024] ========================================================
+
+1) What is Anti Pattern.
+2) Disadvantage of API gateway.
+3) What is Rank function in oracle.
+4) What is use case of condition Attribute in spring boot.
+5) what is props in reactjs.
+6) It is possible to used Kafka without Zookeeper. Why it is required.
+7) What is Cyclic barrier.
+8) What is count down latch.
+9) What is 'Spring Security holder'.
+
+================================= Infogain , 24-Jun-24  ===========================================================
+
+1) What is functional Interface.
+2) Stream API question
+3)
 
 
 
+================================= GSPANN Technologies 24-Jun-24 2:00 PM  ==========================================
+
+1) What is compitablefuture.
+2) What is N+1 Prblem in JPA.
+3) What SQS in AWS.
+4) What is the Throughput of Lambda. I e In Particular defined time how many time lambda can be access.
+5) What is the Throughput of API Gateway. I e In Particular defined time how many time API gateways can be access.
+6) I want to load a my class first after context load or container load in Spring.
+7) We have a list of Employee and those employee contain name, age salary, department. I want to get the department wise asset.
+8) Why HashMap override the equal and hash code.
+9) Suppose we have employee object and we are storing employee record in HashMap 10 times. So how many object will be inserted ? 
+10) What is new feature in HashMap.
+11) Can we you please the Executor-Service.
+12) What is the difference between Future and CompletableFuture .
+
+13) How many microservice design pattern you have work/used .
+14) You have 20 API. Now I want to manage all API mean which API are Active , Which API are down .   || service registery
+
+15) We have one API . 
+16) In Spring Boot , How to initialized a class very first after spring container initialized.
 
 
+================================= Persistence Technology [18-July-24]  [Important Interview always Learn]======================
+
+1) What is the relation between hashcode and equal method.
+2) What all functional components have u used.
+3) Can we create our own annotation.
+4) Let we have 3 Thread t1, t2, t3.  I want to thread t2 to be execute last.  What join do .  
+
+4.1) What join do .  
+
+5) Have u used cyclic barrier. Where u have implemented cyclic barrier. I want the particle example of cyclic barrier.
+6) What is difference between Cyclic barrier and countdown Latch. Give the real case 
+
+7) What is the things you will keep in mind when working on application.
+8) What is Open Closed principle with example. Have u implemented the open closed principle in your project ?
+9) What is the difference between Open - Closed  and 'Liskov substitution' principle. 
+10) What is the default scope of bean in spring. So In case I want to Implement singleton in my application and I have created Bean A. 
+    and  don't want to implement any underling framework like Spring. Then What will be the behavior of Bean B and when we will create the object A
+11) How to handle transaction Management into Spring.
+12) Let us say we have two different database , then how would you maintain the atomicity in your application [ I want to maintain 
+    atomicity across application with these 2 databases  how can I do that].
+13) What is CAP theorem. 
+13.1) Let consider the example RDMS and NoSQL data , So What is difference between these  2 database from CAP theorem perspective.
+
+
+-------------------------------------CASPEX  [12-Aug-24]  -----------------------------------------------------------------------------
+
+1) WebSocket API Vs Rest API in React. 
+2) Client side routing and server side routing.
+3) How to show Fake URL in React.
+4) Internationalize in ReactJS.
+5) Data State maintain in React.
+
+
+-------------------------------------  Ari logic [13-Aug-24]  -----------------------------------------------------------
+
+1) Async call in ReactJS
+2) State management with function  components.
+3) Redux and what is store in redux.
+4) Which all microservice design pattern you have used.
+5)@controolerAdvce
+6) Suppose, We have 10 Thread and one of them is responding withing timeframe then How retime out and infinite waiting.
+7) What is aggregate in ReactJS. What all aggregate method is available.
+8) Meter Monitoring in AWS.
+9) Actuator Vs Meter monitoring.
+10) How to handle transaction in Spring.
+11) JDK, JRE, JVM
+
+===========================  Moder Solutions (Vishu)  ===================================
+
+1) How you will pass global variable into stream.
+2) How will you update this variable with stream variable.
+3) How other Thread would be able to see this updated value.
+4) Design Principle vs design Patten
+5) During Iterator can we assign any value to any variable (Stream).
+6) Reactive API creation.
+7) Cold start problem.
+8) Difference oauth1 and oauth2 and JWT .
+9) we have two database and we want to enable one at a time.
+10) how will you scale the application [Backend and Front end]
+11) Difference between JAVA 8 vs JAVA 17.
+
+===========================  Moder Solutions / Client (Vishu)  ===================================
+
+1) Can we create the custom garbage collector.
+2) What is difference between bean and components.
+3) If I have a executor of 100 bean and I closed executor.shut(). Then what happened to that beans.
+4) Difference b/w static & default of function interface. Write a program for function interface.
+5) Suppose we have 2 customer . Once customer required response in XML and  other need is JSON.   
+     How will you generate XML or JSON dynamically based on client request.
+6) I want to sort the Stream/order the stream in collector.
+7) What happened in Kafka , if your leader and broker got failed.
+8)What new changes in HashMap in term of Performance.
+9)I want to create a checklist in ReactJS. What is the best design pattern you will create  (WebSocket  -> 2 Way communication)
  

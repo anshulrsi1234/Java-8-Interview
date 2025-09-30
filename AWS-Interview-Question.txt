@@ -1,0 +1,73 @@
+=========================== Persistent [28-Aug-25] ==================================================
+
+1)What is AWS API gate way. Which all other services you have used so far.
+2)What is S3.In production how you will share file over there. Will you write any program or any other progm will write.
+3)What is sign-URL . What is benifit of subscribe.
+4)What is SNS. What all step do I mentioned to send email vis SNS. Suppose I want to send email what all do I need to  
+  required to send mail.
+   
+==================================== Ari-logic [13-Aug-24] ===========================================
+
+1) Meter Monitoring in AWS.
+2) Actuator Vs Meter monitoring in AWS.
+
+=========================== Persistent [18-July-2024 ] ===============================================
+
+1) How are you triggering your lambda. So what is triggering point your lambda.
+   (API gateway | AWS SQS | AWS SNS | AWS S3)
+2) In your Lambda, you are connected to database , so where you providing those datbase value (How lambda will be 
+   connecting to database.)
+3) How will you make sure that database credential are encrypted.
+
+==========================  GSPAN Technology [24-June-2024 ] =========================================
+
+1) What SQS in AWS. How many type of SQS in AWS
+2) What is the Throughput of Lambda. I,e In Particular defined time how many time lambda can be access.
+3) What is the Throughput of API Gateway. I,e In Particular defined time how many time API gateways can be access.
+
+============================  Unknown ================================================================
+
+1) In AWS Lambda, how many instances can we created per second in Lambda ?
+2) What is Lambda concurrency.
+3) How long the lambda instance alive.
+4) How lambda accessing the spring boot.
+6) What is 'Partition Key'.
+7) What kind of service you have used in AWS.
+8) Disadvantage of lambda
+9) Does S3 support the vertical and Horizontal scaling
+10)What is Throttling.
+
+
+=========================== Melberi [18 March 2024 ] ===========================================
+
+1) What is "Cold Start" Problem in lambda.
+
+===================================== Answer Of AWS ====================================================================
+
+Lambda : AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service without provisioning or managing servers
+
+Drawback of AWS:
+
+1) The maximum execution timeout for a function is 15 minutes*.Requests limitations by Lambda:
+2) The event request (asynchronous calls) body can be up to 128 KB
+3) Cold Start Problem : A “cold start” is the 1st request that a new Lambda worker handles. This request takes longer to process because the Lambda service needs to:
+
+	a)find a space in its EC2 fleet to allocate the worker
+	b)initialize the execution environment
+	c)initialize your function module before it can pass the request to your handler function.
+
+How can I troubleshoot Lambda function cold start issues?:
+
+1)Increase the memory allocated to the Lambda function
+2)Minimize the size of your deployment package.
+3)Reduce the number of dependencies and external libraries that your function imports
+4)Avoid complex computation at startup.  If your function requires complex computation at startup, such as loading large datasets, you can perform this in the background
+
+API gateway : Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+2)Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications.
+
+3)API Gateway supports containerized and serverless workloads, as well as web applications.
+
+4)API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management
+

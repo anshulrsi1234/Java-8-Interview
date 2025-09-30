@@ -1,0 +1,32 @@
+------ ---------------------------   Docker Image ---------------------------------------------------------------------
+
+
+-------------  To create image -------------------------------
+
+docker build -t spring-boot-image:9.0 .
+
+--------Remove/untagged  Image from docker ------------------------------------------
+
+docker tag bb38976d03cf anshul32615/verse_gapminder
+
+--------Push image from Docker ------------------------------------------------------
+
+docker push anshul32615/dockerkubernate:spring-boot-image
+
+--------Pull image from Docker ------------------------------------------------------
+
+docker image pull anshul32615/docker-repository:11.0
+
+--------Rename Container name -------------------------------------------------------
+
+docker rename romantic_chaum spring-boot-Container7
+
+--------To run Docker Image --------------------------------------------------------
+
+docker run --name spring-boot-container4 -p 8080:8080 -t spring-boot-image:6.0
+
+---- To run same image on multiple container ---------------------------------------
+
+docker run --name spring-boot-Container5 -p 8081:8080 -t spring-boot-image:2.0
+
+docker run -p port:port test2

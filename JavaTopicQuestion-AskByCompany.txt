@@ -1,40 +1,113 @@
 // =======================  OOPS Question =====================================================================
 
 1) What is OOPS concept and why java is not fully object oriented language.
-2) What are SOLID principle of java OR Why java Robust SOLID (SLOID Principle) .
+2) What are SOLID principle of java OR Why java Robust SOLID (SLOID Principle) .[American Express, Persist]
 3) What is Inheritance, Association , Aggregation, Composition , Generalization.
 4) What is disadavantage of Inheritance.
 5) Aggregation vs Composition
 6) Inheritance vs Association.
 
-// ============================Java-8 =========================================================================
+// ============================ Java-8 =========================================================================
 
-1) New feature of Java 8.[Option, Functional Interface, Lambda , Garbage Collector Improvements,Fork/Join Speed Improvements,Easy to Parallelize]
-2) Why Java-8 Introduce.
-2) How will u handle memory managment in java.[The removal of PermGen and the introduction of Metaspace]
+1) Why Java 8 was introduces.
+
+Ans : To support functional programing, To complete with Scala, Best Memory management/ususage,Improve Performance]
+   
+2) New feature of Java 8.
+
+Ans : Optional, Functional-Interface, Lambda , Garbage-Collector Improvements,Fork/Join Speed Improvements,Easy to  
+    Parallelize]
+   
+3) How will you handle memory managment in Java 8.
+
+Ans : The removal of PermGen and the introduction of Metaspace]
+
+PermGen (Permanent Generation) Removed:
+
+	a)Java 8 replaced the PermGen with Metaspace.
+	b)Metaspace is allocated in native memory, not heap.
+	c)You can limit its size with -XX:MaxMetaspaceSize.
+	d)Use G1 Garbage Collector
+	
+Memory Management: Heap and Stack memory, 
+
+Key memory areas:
+
+* Heap Memory (used for dynamic allocation):
+
+	*Young Generation
+		Eden Space
+		Survivor Spaces (S0 and S1)
+	*Old (Tenured) Generation
+
+* Metaspace (replaces PermGen from Java 7):
+
+	Stores class metadata, static variables, etc.
+	Resides in native memory, not heapGarbage Collection.
 
 // ===================== Collection ===========================================================================
 
 1) Difference Between Map and Set and Tree
 2) Internal Implementation of HashMap  OR How HashMap Works internallly.
 3) What is ConCurrentHashMap and how it works internally.
-4) If we Put Employee Objct as a key , Then what will happened. 
+4) If we Put Employee Objct as a key , Then what will happened. [Infogain and Coforge]
 5) what is Fail safe (ConcurrentHashMap) and Fail fast (Map).
 6) How to make List as Unmodified.
-7) What is CAP (Consistency/Availability/Partision) 
-8) Suppose u have a collecion so would u like the for loop or iterator. (iterator)
-9) New Feature in Jav 8 fro HashMap and ConcurrentHashMap.
+7) What is CAP (Consistency/Availability/Partition-Tolerance).
+
+	Ans : Kindly Go through the 'Spring-Boot.txt' for more details.
+
+8) Suppose you have a collecion so would u like the for loop or iterator. (iterator)
+9) What is complexity of LinkedList and Array List while deleting and adding in middle. 
+
+ Suppose we have a 100 employee object in both  LinkedList and Array List 
+
+	• If we want to delete the first element from both of them.  Can you please explain what is deletion time complexity of both data-structure. 
+	LinkedList:  Average and Worst Case: O(1) |  ArrayList: Average and Worst Case: O(n)  // n is the number of element.
+	
+	• If we add/delete object in middle, then what will be complexity.
+	LinkedList:  Average and Worst Case: O(1) |  ArrayList: Average and Worst Case: O(n)  // n is the number of element.
+	
+	• If we delete the last element , then what will be the complexity.
+	LinkedList:  Average and Worst Case: O(1) |  ArrayList: Average and Worst Case: O(n)  // n is the number of element.
+
+10) What is complexity of Red Black tree vs LinkedList while deleting and adding and searching . 
+
+LinkedList: 
+	• Average and Worst Case: O(n)
+	
+Red-Black Tree:
+	• Average and Worst Case: O(logn)
+	
+11) New Feature in Java 8 from HashMap and ConcurrentHashMap.
 
 https://www.youtube.com/watch?v=GO67C7V-IbQ
 
+12) Singleton Connection Object vs Connection Pool
+
+Singleton Connection Object : A single shared DB connection object
+
+Connection Pool : 
+
+	1) A connection pool maintains a pool of open DB connections, allowing clients to reuse them rather than 
+	   creating and closing connections repeatedly.
+	2) Thread-safe; multiple threads can acquire connections
+
+How it works:
+
+	1) On startup, pool creates N connections to the DB.
+	2) When a request needs a DB connection, it borrows one from the pool.
+	3) After the operation, the connection is returned to the pool.
+	4) Pool manages idle, stale, or dead connections.
+
 // ========================= Stream API & Lambda Expression ===================================================
 
-1) : What is Lambda expression : 
+1) What is Lambda expression
 
 Ans : A Lambda expression (or function) is just an anonymous function, i.e., a function with no name and without being bounded to an identifier. 
 They are written exactly in the place where it’s needed, typically as a parameter to some other function.
 
-2) - Why do we need Lambda Expression?
+2) Why do we need Lambda Expression?
 
 Ans : We need to use Lambda Expressions due to following reasons:
 
@@ -49,7 +122,7 @@ Ans : The java.util.function package in Java 8 has many built-in functional inte
 
 Built-in Functional Interfaces in Java : 
 
-1)predicate	  = Retun true and false
+1)Predicate	  = Retun true and false
 2)Consumer	  = Take input as type but doesnot return any value.
 3)Supplier	  = Take no input but trurn output.  Ex=  T get() /optional Class
 4)Functional  = Take input and return value 
@@ -82,7 +155,8 @@ Ans : Below Are Function/Method.
 
 	filter()  ->  Filter out all the stream based on the condtion , Return true and false value
 	map() 	  ->  create the new of type stream .
-	flatMap() ->  Same as map but do the flattening ( Do the flattening means that combines all stream and produce the single result.)
+	flatMap() ->  Same as map but do the flattening ( Do the flattening means that combines all stream and produce the 
+	              single result)
 	peek()	  ->  Just for Debugging purpose, print the stream
 	reduce()  ->  For Aggreagate function like Addition,subtraction , multiplication
 	distinct  ->  Always return disctinct stream element
@@ -98,7 +172,10 @@ Ans : Below Are Function/Method.
 4) Difference Between Map and FlatMap.
 5) What is peek and reduce  method in stream.
 6) What is Diffrence Between Stream and Collection.
-7) How to sort a map based on the value in Java8 [map.entrySet().sorted(Map.Entry.CompareByValue()).collect(Collector.toList())]
+
+7) How to sort a map based on the value in Java 8 
+   Ans:[map.entrySet().sorted(Map.Entry.CompareByValue()).collect(Collector.toList())]
+   
 8) What are the main componnet of stream.
 9) How will u handle exception in stream API.
 
@@ -129,9 +206,22 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 17)What is difference between interpt and intrupted. 
 18)How to merge thread and find out which thread is lock.
 19)What is ForkJoin.[Divide and Concor problem.]
-20)Semaphore, Atomic variables.
+20)Semaphore,Atomic variables.[Atomic Integer and when to used them]
+
+	* Semaphore        : Semaphores are more about resource management and controlling access to shared resources.
+	* Atomic variables : Atomic variables are about ensuring that specific operations on shared variables are performed 					atomically and without the need for explicit locking. Depending on the problem you're trying 
+	                     to solve, you might choose one or the other, or even both in combination.
+
 21)What is Transit[Doesn't Serialize] and Volatite [Stored and Read Value from Main Memory].
 22)What is Thread dump in Java.
+
+23) What is Thread Local and what is Atomic variable.
+
+	• Thread Local   : Provides thread-local variables, where each thread has its own independently initialized 
+					   instance of the variable.
+	
+	• Atomic Variable: Provides thread-safe operations on shared variables, ensuring that operations such as 
+	                   read-modify-write are performed atomically without requiring explicit synchronization.
 
 
 //========================= SignleTon and Enum.===================================================================
@@ -141,17 +231,90 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 3) What is difference b/w Serialaztion (JVM itself) vs Externalization (we decide the serialization process).
 4) 
 
-//------------------------Serialization and cloneing ---------------------------------------------------------------
+//========================= Serialization and cloneing ======================================================
 
 1) Difference between cloning and Copy Constructor (We can decide).
 2) Deep Cloning vs Shallow Cloning.
 3) Serialization . What is alternatve of Serialization (Externalization).
 
 
--------------------------- Spring ---------------------------------------------------------------------------------
+=================================== Design Pattern ============================================
 
 
-	---------------------------- Spring IOC/ Spring Core------------------------------------------------------------
+ ******************************** Creation *********************************************************
+ 
+1) Singleton Design Pattern:
+
+  When u will used Singleton Pattern  :  When a class in your program should have just a single instance available to 										all clients
+
+2) Factory Design Pattern :
+
+  When should we use factory design pattern :  When we have a superclass with multiple sub-classes and based on input, 
+											   we need to return one of the sub-class
+											   
+3) Abstract factory Design Pattern  
+
+ When u will used abstarct factory  :  1) When we want to expose only the interface of the collection of multiple  
+                                          objects and not the implementation.
+									   
+									   2) Abstract Factory Pattern is used by any client to create objects without 
+									      any background knowledge of the structure, composition, and architecture 
+										  of the system.
+4) Builder Design Pattern:   
+
+ When u will used Builder Pattern  :  To create complex objects that have many optional parameters.
+ 
+
+Q) What is the difference between builder pattern and factory pattern ?
+
+Ans:
+
+1) Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product  
+   objects (either simple or complex). 
+2) Builder returns the product as a final step, but in the Abstract Factory, the product gets returned immediately
+
+
+ ******************************** Structure ********************************************************* 
+
+5) Adopter Design Pattern:
+
+When u will used Adopter Design Pattern  : To make existing classes work with others without modifying their source 
+										   code.The pattern involves creating an adapter class that bridges the gap between the interfaces, allowing them to communicate effectively
+
+when you need to integrate systems that have different or incompatible interfaces, such as legacy systems, third-party libraries, or external APIs
+
+Example:  I was working on a project where we had to call an API of an external system in order to calculate tax. The server expected information like zip code, product, price, quantity, etc to calculate the tax. But the bad thing was, it expected the data in XML format. XML and SOAP APIs are really really rare these days except in some banking applications or financial institutions. All our internal APIs expect JSON as input and return JSON as output. Now if we want to make a call to the external server, we have to convert the JSON data into XML format
+
+
+ ******************************** Behaviour *********************************************************
+
+6) Strategy Design Pattern :
+
+When u will used Strategy Design Pattern : when we have multiple algorithms for specific task and we want our 		
+										   application to be flexible to chose any of the algorithm at runtime 
+										   for specific task
+
+7) Template Design Pattern
+
+When u will used Template Design Pattern =
+
+8)State Design Pattern:
+
+When u will used State Design Pattern :   
+
+Real life example of a state design pattern?
+
+Let's dive into a real-time example of the State Design Pattern by considering a mobile phone ringer. Mobile phones often have different ringer modes like “Silent”, “Vibration”, and “Ringing”. Depending on the mode, the behavior of an incoming call will differ.
+
+State Interface: 		This defines the behavior when there’s an incoming call.
+Concrete State Classes: These implement the State interface for “Silent”, “Vibration”, and “Ringing” modes.
+Context: 				This represents the mobile phone itself.
+
+
+================================= Spring ===================================================================
+
+
+	************************ Spring IOC/ Spring Core *************************************************
 
 	1) What is Spring IOC
 	2) What is Dependency Injection(DI). How many type of DI is available in spring.
@@ -169,13 +332,13 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	13)What is qualifier bean in spring.
 
 
--------------------------- Spring AOP --------------------------------------------------------------------
+   *********************************** Spring AOP *******************************************************
 
 	1) What is Spring AOP and Give the case where you will used the AOP.
 	2) What is Aspect in AOP and How many Type of Aspect is available in Spring.
 	3) What is JointPoint,Adviced,Pointcut.
 
--------------------------- Spring Boot --------------------------------------------------------------------
+   ********************************** Spring Boot *******************************************************
 	
 	
 	1) What is SpringBoot and describe its benifit over spring OR Why we should used Spring boot.
@@ -191,7 +354,7 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	11)How will you defined the endpoint of service/appliaction / What are the end point of Service.
 	12)Have u used Spring Security OR How will u authenicate the REST Service. (Important)
 	13)How will u handle transaction in Spring Boot.(Important)
-	   [@Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
+	    Transactional(propagation=TransactionDefinition.NESTED,isolation=TransactionDefinition.ISOLATION_READ_UNCOMMITTED)]
 	   
 	14)Difference between components and services.What Happened if we mark service layer as a component.
 	15)How caching work in Spring Boot and Why do we need the cache.
@@ -199,76 +362,133 @@ Experience with Multithreading, Concurrent Package and Concurrent APIs
 	17)How to Defined Global exception.
 	18)What is profile in Spring Boot.
 	19)What is authenication and Authorization.
-	20)What is difference between Post,Put,Patch.
-		(PATCH is non-idempotent, while PUT is idempotent).POST and PATCH are generally considered  
-		 non-idempotent, as their outcomes may vary with each request
-	21)What is difference between throughput and response time.
-	22)What is the difference between PathVariable and RequestParam .
-	23)Idempotent /Idempotency in Rest-API
-		Idempotent /Idempotency means sending the same request multiple times will produce the same result, without changing the state of the server or the resource.(PATCH is non-idempotent, while PUT is idempotent).POST and PATCH are generally considered non-idempotent, as their outcomes may vary with each request
-
---------------------------- Microservice ---------------------------------------------------------------------------------------------------------------
+	20)What is difference between throughput and response time.
+	21)What is the difference between PathVariable and RequestParam .
 	
-	1) Defined the Architecture of Microservice. (Important)
-	2) What is the component of Microservice .
+	22)Idempotent /Idempotency in Rest-API:
 	
-		Ans: 5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery....)
+		Idempotent /Idempotency means sending the same request multiple times will produce the same result, without changing the state of the server or the resource.
+				
+	23) What is difference between Post,Put,Patch.
+
+		PUT is idempotent
+		POST and PATCH are generally considered non-idempotent, as their outcomes may vary with each request
+		 
+		Post  : Used Post if you want to update the request.
+		Put	  : Put is used to create the Request. 
+		Patch : Use Patch , If u want to update any specific JSON filed/Attribute.
+		
+		
+	24) If I have 3 Bean. And I want these 3 Bean execute /load sequentially. Then How we can achieve this.  
+   
+        Ans: (@DependsOn({"bean1", "bean2"}))
+
+	25) If I don’t want to autoconfiguration, I want to My configuration, then how I can do this. 
+
+		Ans: @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class,  
+												HibernateJpaAutoConfiguration.class,  
+												WebMvcAutoConfiguration.class, 
+												ErrorMvcAutoConfiguration.class })
+		  
+	26) Suppose you have 100 of Rest Controller and I want to print each request and response , 
+	    so how we can achieve this. 
+		
+	    Ans : Via Interceptor [preHandle() | postHandle() | afterCompletion ]
+
+	27) Suppose Container load the bean and before it is not used by any client or component, we want to modify 
+	    the bean . How we can do that. 
+		
+		Ans: By Implmenting the BeanPostProcessor interface
+		 
+=================================== Microservice ===================================================== 
 	
-	3) What is benifit of Service Discovery and its Role.
-	4) What is API gateway and their benifit. [Netflix Zuul API Gateway]
-		Netflix Zuul : JVM based Router and server side load balancer. So filter request based on URL we used the Zuul Microservice.
-	5) How will authenicate the API.(Via JWT Token) OR How will u handle Security in microService By JWT.
-	
-	5) How will you write all log in file(How will u track log details) in microservic when all service are deployed on the different server / How can  I achive Centeralized Logging in microservice (Via Zipkin) OR How will tarce all log activity of all microService.[Correlation-Id]
-	
-	6) How will externalized the microservice configuarion file. [On Git Server]
-	7) How will one microservice communicate with other MicroService. 
-		(AsyncRestTemplate / MessageQueue / RestTemplate)
-	8) How will you maintain caching in Microsercvice.
-	9) How will you manage configuarion of 10 central Microservice (Read About Config Server). How Other know That configuration has been changed.
-	10)What is Service Discovery [Euroka Client] and How it integrate with API GateWay and why it is needed [Used while comminicatng with microservice]. What is client and server side.
-	
-	11)Supose you have 3 instance of your microservice ,What then how API gateways know Which Service Instance we need to call.
-	12)Suppoose a microservice call another microservice and other call micro Serviceand so on.So how can we know where is error.[Distributed log /Centeralizee Logging]
+1) Defined the Architecture of Microservice. (Important)
+2) What is the component of Microservice .
 
-	13)Distributed log tracing using Spring Cloud Sleuth & Zipkin.
-	14)What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
-	15)What is ELK Stack [ Elastic Search | Logstash | Kibana ] for Centralize logging.
-	16)Service Registry [Euroka Server | Zookeeper] - Which contain Euroka Client
-	
-	17)What is CQRS vs CRUD. What is Alternative of CQRS Pattern[API composition]
-	18)What is SAGA [For Distributed Tranaction]
-	
-	
+	Ans: 5 Component of SpringBoot (Acutator, APIGateWay, ServiceDiscovery....)
 
+3) What is benifit of Service Discovery and its Role.
+4) What is API gateway and their benifit. [Netflix Zuul API Gateway]
+	Netflix Zuul : JVM based Router and server side load balancer. So filter request based on URL we used the Zuul Microservice.
+5) How will authenicate the API.(Via JWT Token) OR How will u handle Security in microService By JWT.
 
-------------------------------  AWS --------------------------------------------------------------------------------------------------------------------
+5) How will you write all log in file(How will u track log details) in microservic when all service are deployed on 
+   the different server / How can  I achive Centeralized Logging in microservice (Via ELK) OR How will tarce all log   
+   activity of all microService.[Correlation-Id]
 
-1) How will u authenticate JWT in Lambda.
-2) VPC 
-3) 
-	
+6) How will externalized the microservice configuarion file. [On Git OR Vault]
+7) How will one microservice communicate with other MicroService. 
+	(AsyncRestTemplate / MessageQueue / RestTemplate)
+8) How will you maintain caching in Microsercvice.
+9) How will you manage configuarion of 10 central Microservice (Read About Config Server).So how other servies know 
+   that configuration has been changed.
+   
+10)What is Service Discovery [Euroka Client] and How it integrate with API GateWay and why it is needed.
+  
+10.1)What is client and server side.
 
------------------------------------ Design Pattern -----------------------------------------------------
+11)Supose you have 3 instance of your microservice , What then how API gateways know Which Service Instance we 
+   need to call.
+   
+12)Suppoose a microservice call another microservice and other call another micro Service and so on.So how can we 
+   know where is error.[Distributed log /Centeralizee Logging].
 
------------------ Creation --------------------------
+13)Distributed log tracing using Spring Cloud Sleuth & Zipkin.
+14)What is Circuit breaker, and how to implemented in Circuit breaker in MicroService.
+15)What is ELK Stack [ Elastic Search | Logstash | Kibana ] for Centralize logging.
+16)Service Registry [Euroka Server | Zookeeper] - Which contain Euroka Client
+17)What is SAGA [For Distributed Transaction]
+18)What is CQRS (Command and Query Responsibility Segregation) in microservice 
+   [Comand = Write & Query = Read operation] 
+19)What is CQRS vs CRUD. What is Alternative of CQRS Pattern[API composition]
 
-1) Singleton Design Pattern
-2) Factory Design Pattern
-3) Abstract factory Design Pattern  = What is Abstract factory pattern. When u will used abstarct factory.
-4) Builder Design Pattern
+=================================== Kafka ===============================================================
 
----------------- Creation --------------------------
-5) Adopter Design Pattern
-
----------------  Creation --------------------------
-
-6) Strategy Design Pattern 
-7) Template Design Pattern
-8)
+1) Suppose Producee publish a message to topic and you have many consumer to consume same topic. 
+   How will you make sure that message will be consume by particular consumer.
+2) What is sharding and Partition
+3) What is partition in kaka. How to do the partition
+4) What is Commit offset in Kafka.
+5) Can we used Kafka without Zookeeper.
+6) What is Kafka Lag
+7) What is the need of Kafka zookepper. || To support distributed instance environment.
 
 
---------------------------------------- DataBase -------------------------------------------------------
+=================================== AWS =================================================================
+
+1) How will you authenticate JWT in Lambda.
+2) What is "Cold Start" Problem in lambda.
+4) What is the Throughput of Lambda. I e In Particular defined time how many time lambda can be access.
+5) What is the Throughput of API Gateway. I e In Particular defined time how many time API gateways can be access.
+3) In AWS Lambda, how many instances can we created per second in Lambda ?
+4) What is Lambda concurrency.
+5) How long the lambda instance alive.
+6) How lambda accessing the spring boot.
+7) What are "triggering point" of Lambda. | API gateway | AWS SQS | AWS SNS | AWS S3
+8) How lambda will be connecting to database.
+9) Disadvantage of lambda
+
+10) what is SQS. How many type of SQS in AWS
+11) What is 'Partition Key'.
+12) What all services you have used in AWS so far. APIGateWay | S3 | SNS | SQS |
+
+13) What is S3.In production how you will share file over there , will you write any program or any other program 
+    will write.
+14) Does S3 support the vertical and Horizontal scaling ?
+
+15) What is AWS API gate way. Which all other services you have used so far.
+16) What is the Throughput of API Gateway.i.e In Particular defined time how many time API gateways can be access.
+
+17) What is SNS. What all step do I mentioned to send email vis SNS. 
+    Suppose I want to send email what all do I need to required to send mail.
+
+18) What is sign-URL . What is benifit of subscribe.
+
+19) Meter Monitoring in AWS.
+20) Actuator Vs Meter monitoring.
+
+
+=================================== DataBase ==============================================
 
 1) How will u create trigger.
 2) Difference between delete and Truncate.
@@ -295,73 +515,29 @@ Ans: SELECT * FROM employees w,employees m
 	WHERE w.manager_id = m.emp_id
 	AND w.salary > m.salary  and m.role <> 'manager'
 	
------------------------------------ ReactJS Question ---------------------------------------------------
+15)Write a SQl query to find out the duplicate record in based on name.
 
-1) What is High Level Component.
-2) How to set Envirement variable in React.
-3) What is Webpack in react
-4) what is differen between == and === in reactjs.
+Select * from Emplaoyee
+group by name 
+having count() >1
 
-'= ='   is used for comparison between two variables irrespective of the datatype of variable.
-'= = =' is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
-
-5) What is CORS in react ?
-
-Ans :   res.header("Access-Control-Allow-Origin", "*");
-		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-		
-6) What is BootStrap and what is the benifit of bootStrap.
-7) Suppose u have Parent A and Child B,C. Now How I can get State value in classc C from B.
-8) What are life cycle of ReactJs.
-9) Difference between Props and State.
-10)What are the Higher Order Componenet in Reactjs.
-11)what is react hooks vs redux.
-12)What is the difference between class vs function in React.
-13)what is Pure Components in React.
-14)  
-what will be the output of below program 
-sum(10)(20)  outut = 30
-
-sum = (a, b) => {
-	console.log("output is ::" + (a+b)));
-}
-15) What will be the output of below line 
-	if(false === '0')
------------------------------------ JAVAScript Question ------------------------------------------------------------
-
-5) What is Hoisting in java script.
-6) What is output of below program
-
----------------------------------  UI Interview----------------------------------------------------------------------
-
-========================= HTML/Angluar ==============================================================================
-
-1) what is Prototype .
-2) What is BootStrap and what is the benifit of bootStrap.
-4) What is Display : None and Visibly : hidden in Css
-5) What is difference between HTML and HTML5.
-6) If you want to load and play video then what will you do.
-7) what is Observale. and 
-8) what is Zindex.
-9) what is difference div and span.
-10)What is doctype in HTML.
-
-------------------------------------------- Git ---------------------------------------------------------------------
+======================================== Git ===============================================
 
 1) What is Rebase in GIT.
 2) What is difference between rebase and Merge.
 
--------------------------------- Maven-------------------------------------------------------------------------------
+======================================= Maven ==============================================
 
 1)  How will you defined goal in Maven. 
+2)  what is dependency management tag in maven. 
+3)  what all scope currently maven . 
 
 Fair Enough.
 
-------------------------------- CI/CD Tools -------------------------------------------------------------------------
+======================================= CI/CD Tools =======================================
 
 CI : What does CI stand for? Continuous integration is when each newly created part of the app is integrated into the existing one, carefully tested, and moved to the next stage. 
 
 CD : Continuous delivery is when the developers build the project step by step, and each phase can be delivered to the customer at any time. Source: 
-
 
 

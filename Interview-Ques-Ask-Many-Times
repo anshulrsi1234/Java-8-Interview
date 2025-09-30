@@ -1,0 +1,55 @@
+S.NO	Question 	No Of time asked	Company name
+1	What is SOLID Principle. Explain All with coding.  ||  ,[ 	5, 	Persistence , American Express]
+2	Difference Between Aggregation and composition.	5	Society General
+	Collations		
+3	What is Hashtable. Difference Between Map , Set , List.		
+4	What is new in HashMap Java 8. Explain Internal working of HashMap in Java 8.		
+5	What is Concurrent HashMap and how it works internally. 	3	Coforge, 
+	        OR 
+	What is new in Concurrent  HashMap Java 8. Explain internal working of Concurrent HashMap in Java 8.
+6	How to create Custom Array List without using inbuilt function of java.	2	Society general , go Digit
+7	How to create Custom LinkedList and Circular-ArrayList.		
+	Stream		
+8	 How to sort a map based on the value in Java8.	8	
+	
+	[map.entrySet().sorted(Map.Entry.CompareByValue()).collect(Collectors.toList())]     // Important
+	
+9	Difference Between Stream and Collection.		
+10	Difference between Map and 'flat map'.		
+	Thread		
+11	 What is Difference between Runnable and Callable. Explain with example. 	3	
+12	 Difference between wait and sleep.	3	
+13	What is Thread Pool and  can we create our own Thread Pool. Advantage of creating own Thread-Pool.	2	
+14	What is CompletableFuture in Java 8. 	2	Virtusa
+15	Countdown Latch and Cyclic barrier with real time example.	10	Persistence , Coforge
+16	What is Fork and Join in java 8	3	
+	 Design Pattern 		
+17	 What is Immutable. Explain with example.	4	
+18	 What is Singleton. How to create to create singleton class with example. Also explain Reflection API in singleton. 	2	
+19	 Singleton with Reflection API.	2	
+20	1) What is Builder Design Pattern . Provide the case where you will used this. Explain  with example. 	3	
+	2) If Builder design pattern is immutable so how can construct the object.
+21	What is Adopter Design Pattern. Give me the case when you will used the adopter design pattern		
+22	What is 		
+23			
+	Spring Boot		
+24	 Benefit of Spring Boot  over Spring.	5	
+24	 Difference between controller and Rest controller	5	
+25	 What is attribute of Transaction. Explain different transactions attribute	4	
+26	 What is difference between Post, Put , Patch.	3	
+27	 What is difference between @component  and @configuration.	2	
+28	 What is @EnableAutoconfigurations and @SpringBootAnnotation.	4	
+	Microservice		
+29	How many design Pattern you know for microservice.	2	
+30	What is Idempotent /Idempotency in Rest API.	2	
+31	How will handle exception in distributed systems. [ SAGA Design Pattern]	6	
+32	How will you do the load Balancing	1	
+33	What is Circuit breaker, and how to implemented in Circuit breaker in Microservice.	4	
+	Data Base Question 		
+34	Find out the highest salary of Employee of each department.	5	
+	OR 
+	Find out the max salary of each department Employee.  Employee_Id, department_Id [ Eng, QA, dev, mgmt. ] , Salary.
+	
+	Find out the max salary of each department Employee.  
+35	Two table Department, Employee. List of Employee in the department where there is more than 10 employee.		
+			

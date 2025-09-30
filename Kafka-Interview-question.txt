@@ -1,0 +1,6 @@
+1) The Advantages of using Apache Kafka are as follows:
+1) How to do the partition . What is partition in kaka.
+2) Suppose Producer send  message to Kafka Topic. Now I want this message only consume by particular consumer. How to do that.
+3) What is Commit offset in Kafka.
+4) Can we used Kafka without Zookeeper.
+5)

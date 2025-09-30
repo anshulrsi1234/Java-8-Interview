@@ -1,0 +1,81 @@
+1)Program for DeadLock.
+2)How will you authenicate the Lambda function API/API gateways using JWT.
+
+
+------------------CDK global [06-Aug-25]---------------------------
+
+1) What is lag in kafka.
+2) How we can identify, that that message has been consume by consumer so far.(off-set)
+2) Supppose A microservice is calling B,C, E Mservice. It is taking 15 Sec to execute . I want to A microservice to finished its 
+   exection in 5 Sec . How we can do that.
+3) What is CompletableFuture.
+4) What is futhure vs CompletableFuture.
+5) Difference between Lock and Synchnorized.
+6) We have string 'Mahesh'. I want it should return first non repeatable charter.
+7) How to call async call for multiple microservice.
+8) Immutable class with example.
+
+
+-------------------------  L2 round -----------------------
+
+1) Challenges you have faced in your project and how you have solved that issue . Just explain
+2) When you will not use Cache. // Give the case when you will used cache.
+3) what is 12 factor of Microservice.
+
+-------------------------- CRIS [16-Aug-25] -----------------------------------------------
+
+1)What is 12 factor of Microservice.[Codebase,Dependencies,Config,Backing Services,Build + Release +Run, Processes, Port Binding,Concurrency, Disposability,Dev/Prod Parity, Logs, Admin Processes]
+
+
+2)Write an exmaple of executor service along with multiple callble.
+3)Which datastrture you will used in case data streaming.
+4)What approch you will consider while migrating lecegy application to new application.
+5)What datastrture you will used while taking
+6)Give the real case when you will used redis.
+7)What is Adopter design pattern. (When we have two incompatble interface)
+8)
+
+@functinalInterface
+interface MathmaticalFuntion {
+	public int doOperation(int a , int b);
+}
+
+class mathmaticalclass {
+
+	public static void main(){
+
+	MathmaticalFuntion mathFunction = () ->  {
+		return a*b;
+	}
+	
+	  mathFunction.doOperation(5,6);
+	}
+
+}
+
+-------------------------- Persistent [28-Aug-25] -----------------------------------------------
+
+1) What is [S & D & L] in SOLID principle. Explain with example.
+2) What is try with resource [Java 7] ||  try(express){ }catch(Exception e){}
+
+try-with-resources statement in Java is a try block that declares one or more resources
+Any object that implements the java.lang.AutoCloseable (or the older java.io.Closeable) interface can be used as a resource.
+
+3) What is new feature in Java 17 . Difference between Java 8 vs Java 17.
+4) How to create new instance. (clone & Reflection API)
+5) What is SAGA design pattern
+6) What is CQRS (Command and Query Responsibility Segregation) in microservice
+7) What is difference between sleep and wait.
+8) Difference between Stream and collection.
+9) How do you Secure your Microservice. Which Protocole you have used OAuth1 or OAuth2.
+
+Ans: Let me know if you want a working code example with Spring Security + JWT or OAuth2 with Keycloak/Okta, or want to dive into mutual TLS (mTLS) for services.
+
+
+10)What is AWS API gate way. Which all other services you have used so far.
+11)What is S3.In production how you will share file over there. Will you write any program or any other progm will 
+   write.
+12)What is sign-URL . What is benifit of subscribe.
+13)What is SNS. What all step do I mentioned to send email vis SNS. 
+   Suppose I want to send email what all do I need to required to send mail.
+

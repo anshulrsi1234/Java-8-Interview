@@ -1,0 +1,144 @@
+============================= MicroService Topic =======================================================
+
+1) MicroService Arcteture :
+
+2) MicroService Design Pattern :
+
+	Servics Mess -> (Side Card pattern) 
+	
+	1) Stranger Fig Pattern :  Modernize an application by incrementally developing a new (strangler) application around the legacy application 
+		OR 
+	   Developing an new appliaction from monololatic in step by step manner.
+	
+	2) Decomposition Design Pattern : Break down(seprate) the componenets/service according to the sub domain).
+	
+	3) API Composition Pattern: Create Multiple Micro-Service to create more complex and feature rich API for client.
+	
+	4) Gateway Design Pattern : This is an  entry point for any microservice to be access. Ex. API Gateway is the example Gateway Design Pattern. (Security, Logging , routing,etc)
+	
+	5) SAGA Pattern : 1) Mange Long-live tranaction across multiple microservice by breaking down into 	
+						 sequnce of smaller , local transaction.
+					  2) SAGA used Cordination technique
+		
+		a) Orchestration : Having Cordinator which talks to every services and will responsilble for commit and rollback.
+		
+		b) Chronography  : Every Service having states and events. It an Event Driven communication.
+		
+		ACID Properties: 
+		
+			Atomic     -----> Start Transaction
+			Consistent -----> Deduct amount from checking Account
+			Isolated   -----> Credit amount to saving account
+			Durable	   -----> Commit Transaction
+			
+	6) CQRS Pattern : Create the replica service( Master/Slave)/Segrating the service (Update/Create/Delete) Configuration Externalization pattern.
+
+	7) Service Registery Pattern: 
+	
+	8) MicroService - Communication :
+	
+		a) Synchronous 
+		b) Asynchronous
+		
+	9)  Vault = External Configuration
+	10) Distributing-Logging =  Dyna-Trace
+	11) CloudFront
+	12) AWS RDS:
+	13) Federation
+		
+==============================================================================================================================================
+
+Application architecture patterns :
+
+	Monolithic architecture
+	Microservice architecture
+	
+Decomposition :
+
+	Decompose by business capability
+	Decompose by subdomain
+	Self-contained Service
+	Service per team
+
+Refactoring to microservices : 
+
+	Strangler Application
+	Anti-corruption layer
+
+Data management :
+
+	Database per Service
+	Shared database
+	Saga : 
+	Command-side replica
+	API Composition  - To implement complex queries in a micro-service.
+	CQRS 			 - Address challenges of quering multiple micro-service by defining a special 		
+					   database view desinged to support such query(Alternative is "API composition")
+	
+	Domain event
+	Event sourcing	 - address the problem of maintaining data consistency across microservice(an 
+					   alternative to this would be ("Transaction Log Tail").
+
+Transactional Messaging :
+
+	Transactional outbox
+	Transaction log tailing
+	Polling publisher
+
+Deployment Patterns :
+
+	Multiple service instances per host
+	Service instance per host
+	Service instance per VM
+	Service instance per Container
+	Serverless deployment
+	Service deployment platform
+
+Cross cutting concerns :
+
+	Microservice chassis
+	Service Template
+	Externalized configuration
+
+Communication style :
+
+	Remote Procedure Invocation
+	Messaging
+	Domain-specific protocol
+	Idempotent Consumer
+
+External API :
+
+	API gateway
+	Backend for front-end
+
+Service discovery :
+
+	Client-side discovery
+	Server-side discovery
+	Service registry
+	Self registration
+	3rd party registration
+
+Reliability :
+
+	Circuit Breaker
+	
+Security :
+	Access Token
+	
+Observability :
+
+	Log aggregation
+	Application metrics
+	Audit logging
+	Distributed tracing
+	Exception tracking
+	Health check API
+	Log deployments and changes
+
+=========================================================================================================
+
+ 
+ 
+ 

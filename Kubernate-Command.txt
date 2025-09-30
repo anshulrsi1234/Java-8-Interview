@@ -1,0 +1,16 @@
+------------ Deploy image in Kubernate cluster/Container ------------------
+
+kubectl create deployment spring-boot-9 --image=spring-boot-image:9.0 --port=8080
+
+
+kubectl create deployment spring-boot-10 --image=spring-boot-image:10.0 --port=8080
+
+kubectl get deployment
+
+kubectl describe deployment
+
+kubectl get pods
+
+When 2 POD (Replica=2) for same Deployment
+kubectl port-forward pods/spring-boot-9-65f588589c-8mzwk 8080
+kubectl port-forward pods/spring-boot-9-65f588589c-4wdlt 8081:8080

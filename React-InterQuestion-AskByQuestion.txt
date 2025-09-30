@@ -1,0 +1,203 @@
+----------------------------------- ReactJS-Question ---------------------------------------------------
+
+
+================================= Persistant [30 Aug 25] ===============================================================
+
+1) What is usefetch and useEffect.
+2) Do you have any caching techique in your application. 
+3) Suppose I have a application that is very slow. How you would improved the performance of application.
+4) How will you manage state
+
+======================================  CASPEX  [12-Aug-24]  =======================================
+
+1) WebSocket API Vs Rest API in React. 
+2) Client side routing and server side routing.
+3) How to show Fake URL in React.
+4) Internationalize in ReactJS.
+5) Data State maintain in React.
+
+======================================  Ari logic [13 Aug-24]  =======================================
+
+1) Async call in ReactJS
+2) State management with function  components.
+3) Redux and what is store in redux.
+7) What is aggregate in ReactJS. What all aggregate method is available.
+
+
+================================= Walmart [23 July 24] ===============================================================
+
+1) We have a Employee json ( name, age , salary, dob). I to fetch all keys . How we can do that. 
+2) 
+3)
+
+================================= Persistant [18 July 24] ======================================================
+
+1)In your application , Are you using functional based componenets or class based components.
+2)What are closure.
+3)In your application how does child components interact with Parent component. How these componts interact with 
+  each other,
+4)What is call,apply, bind.
+
+
+======================================  Fiserv [ 18 June 2024]  =================================================
+
+1) What is fragment.  ||  When you want to render multiple component  you will you used Fragment instead of 'Div'. 
+2) What's the Difference Var, Let, and Const? 
+3) Life of React. How to achieve life cyclic in hook.  || useEffect
+4) How will you avoid unnecessary re-rendering in React?  [ useCallBack | React.memo | PureComponents]
+5) What is advantage of React . Why you have choose ReactJS.
+6) What is components re-render in class and how it work in functional programing.  || useEffect
+7) What is condional rendering. How will you do this conditional re rending in functional components.
+8) What is key in React. And why it is required OR benefit of keys.
+9) What async & await in ReactJS.
+10)What is ShouldComponetUpdate.  || It do the shallow comparison. It will check whether is there any change in state or props. 
+11)What is alternative of componentDidMount in functional components.  || UseEffect . 
+
+================================= Unknown [12 June 24] ============================================================
+
+1)What is fragment.
+2)What is Higher order component.
+3)What is ComponenetDidUpdate
+4)I want to access my state variable throughout the application , How we can do that.
+5)What is difference between setTimeout and setInterval.
+
+		1) setTimeout executes the callback function once after the specified delay.
+		
+		setTimeout(callback, delay);
+		
+		Example :  
+		
+		setTimeout(() => { 
+			console.log('Delayed message after 2000ms'); 
+		}, 2000);
+		
+		2) setInterval  executes the callback function repeatedly at specified intervals until stopped.
+
+		setInterval(callback, interval);
+		
+		setInterval(() => { 
+			console.log('Repeated message every 3000ms'); 
+}, 3000);
+
+====================================== QUALITEST INFOTECH PRIVATE LIMITED  [ 3 June 2024] =======================
+
+1) Difference between NPM and NPX.
+2) How will you add global exception handler.
+3) How will you communicate with backend service and Suppose If I want to modified this request  before sending request to Backend. What should be do.
+Ans: We can used Axios Service interceptor.
+4) What is useEffect and useRef and useState .
+
+5) Toggle On/Off functionality.
+6) Controlled and Uncontrolled. 	 Uncontrolled manage their own state which controlled component manage by parent components.
+7) How to used interceptor in React	Axis Interceptor 
+
+8) What are the keys in React.  It is used to uniquely identify 
+9) What is Bootstrap and what is the benefit of bootstrap.
+10) What is Promise resolve and Reject. 
+
+A Promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value
+
+
+============================Savir Software [3-Jan-2024]========================================================
+
+1) What is promise in JavaScript. [ Like future in Java  , used to handle asynchronies call]
+
+
+========================== Coforge Inter View Question [3-Dec-2023] =========================================
+
+1)  Var abc = 4 +"3"+ 2 + 6
+2)  What are promises and what are the state of promise.[Pending fulfil and reject]
+3)  Can we used await in promise without async  // NO
+5)  What is unidirectional data flow. 
+
+'Uni-directional data flow' refers to the concept where data flows in one direction through a component hierarchy. This means that data is passed down from 
+parent components to child components through props, and child components cannot directly modify the data they receive. Instead, if a child component needs to 
+update data, it does so by invoking callback functions passed down from its parent components.
+
+6)  what is server rendering in react []
+7)  what is array restructuring. Where we used in react.
+
+ In React (and more broadly in JavaScript), "array restructuring" likely refers to "array destructuring." Array destructuring is a feature introduced in ES6 (ECMAScript 2015) that 
+ allows you to extract data from arrays or iterable objects (like arrays or strings) into separate variables.
+
+Syntax of Array Destructuring:
+
+The basic syntax for array destructuring looks like this:
+
+const [element1, element2, ...rest] = array;
+
+	• element1, element2:  Variables where elements from the array will be assigned.
+	• ...rest: The rest operator (...)  gathers the remaining elements into an array.
+
+Benefits of Array Destructuring in React
+
+	• Clarity and Readability: Destructuring makes code more concise and readable, especially when accessing specific elements or properties.
+
+8)  Suppose I have any parent class  having child class. I had changed in parent class , then will child will load.
+9)  What is react Memo.
+10) What is pure component.
+11) How to pass to data from parent to child. Can we pass react hook as a hook.
+12) What is higher order component.
+13) What is react fragment.
+14) what is useEffect hook.
+
+
+
+
+
+//================================== American Express [ 7 Sept 2022] ==========================================
+
+1) What is higher order component.
+2) What is Hoisting in java script.
+3) What are Closure?
+4) What is the difference between useEffect and useRef.
+5) What is output of below program . // This is Hoisting.
+
+a()
+function a(){
+    console.log("a");
+}
+b();
+var b = function(){
+    console.log("b");
+}
+
+================================= Unknown [18 July 24] ============================================================
+
+1) What is High Order Component.
+2) How to set Envirement variable in React.
+3) What is Webpack in react
+4) what is differen between == and === in reactjs.
+
+'= ='   is used for comparison between two variables irrespective of the datatype of variable.
+'= = =' is used for comparision between two variables but this will check strict type, which means it will check 
+datatype and compare two values.
+
+5) What is CORS in react ?
+
+Ans :   res.header("Access-Control-Allow-Origin", "*");
+		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+		
+6) What is BootStrap and what is the benifit of bootStrap.
+7) Suppose u have Parent A and Child B,C. Now How I can get State value in classc C from B.
+8) What are life cycle of ReactJs.
+9) Difference between Props and State.
+10)What are the Higher Order Componenet in Reactjs.
+11)what is react hooks vs redux.
+12)What is the difference between class vs function in React.
+13)what is Pure Components in React.
+14)  
+what will be the output of below program 
+sum(10)(20)  outut = 30
+
+sum = (a, b) => {
+	console.log("output is ::" + (a+b)));
+}
+15) What will be the output of below line 
+	if(false === '0')
+	
+
+----------------------------------- JAVAScript Question ------------------------------------------------------------
+
+5) What is Hoisting in java script.
+6) What is output of below program

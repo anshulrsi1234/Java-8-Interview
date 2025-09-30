@@ -1,0 +1,19 @@
+Behaviour design Patern :
+
+1) Strategy design pattern
+2) Template design pattern: The Template Design Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class but allows subclasses to override specific steps of the algorithm                                  without changing its overall structure.
+
+    Real Use Case Example: Online Payment Processing System
+
+    You’re building an e-commerce platform that supports multiple payment gateways (e.g., PayPal, Stripe, Apple Pay). Each payment method has a slightly different implementation, but the overall flow is the same:
+
+    1) Validate payment details
+    2) Connect to payment gateway
+    3) Make the transaction
+    4) Send confirmation email
+
+Benefits:
+
+a) Code reuse: The process_payment() logic is reused.
+b) Open/Closed Principle: You can add more processors (Apple Pay, Google Pay) without modifying existing code.
+c) Clear structure: Makes the algorithm easier to follow and maintain.
