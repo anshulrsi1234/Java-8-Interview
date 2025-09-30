@@ -1,7 +1,7 @@
------------------------------------ ReactJS-Question ---------------------------------------------------
+************************************* ReactJS-Question ********************************************
 
 
-================================= Persistant [30 Aug 25] ===============================================================
+================================= Persistant [30 Aug 25] ===========================================
 
 1) What is usefetch and useEffect.
 2) Do you have any caching techique in your application. 
@@ -11,7 +11,7 @@
 ======================================  CASPEX  [12-Aug-24]  =======================================
 
 1) WebSocket API Vs Rest API in React. 
-2) Client side routing and server side routing.
+2) Client side routing and Server side routing.
 3) How to show Fake URL in React.
 4) Internationalize in ReactJS.
 5) Data State maintain in React.
@@ -24,7 +24,7 @@
 7) What is aggregate in ReactJS. What all aggregate method is available.
 
 
-================================= Walmart [23 July 24] ===============================================================
+================================= Walmart [23 July 24] ===============================================
 
 1) We have a Employee json ( name, age , salary, dob). I to fetch all keys . How we can do that. 
 2) 
@@ -42,7 +42,7 @@
 ======================================  Fiserv [ 18 June 2024]  =================================================
 
 1) What is fragment.  ||  When you want to render multiple component  you will you used Fragment instead of 'Div'. 
-2) What's the Difference Var, Let, and Const? 
+2) What's the Difference var, let,const ? 
 3) Life of React. How to achieve life cyclic in hook.  || useEffect
 4) How will you avoid unnecessary re-rendering in React?  [ useCallBack | React.memo | PureComponents]
 5) What is advantage of React . Why you have choose ReactJS.
@@ -50,8 +50,10 @@
 7) What is condional rendering. How will you do this conditional re rending in functional components.
 8) What is key in React. And why it is required OR benefit of keys.
 9) What async & await in ReactJS.
-10)What is ShouldComponetUpdate.  || It do the shallow comparison. It will check whether is there any change in state or props. 
-11)What is alternative of componentDidMount in functional components.  || UseEffect . 
+10)What is ShouldComponetUpdate. 
+   Ans: It do the shallow comparison. It will check whether is there any change in state or props. 
+11)What is alternative of componentDidMount in functional components.  
+   Ans : UseEffect . 
 
 ================================= Unknown [12 June 24] ============================================================
 
@@ -79,16 +81,21 @@
 			console.log('Repeated message every 3000ms'); 
 }, 3000);
 
-====================================== QUALITEST INFOTECH PRIVATE LIMITED  [ 3 June 2024] =======================
+====================================== Qualitest infotech [ 3 June 2024] =======================
 
 1) Difference between NPM and NPX.
 2) How will you add global exception handler.
-3) How will you communicate with backend service and Suppose If I want to modified this request  before sending request to Backend. What should be do.
-Ans: We can used Axios Service interceptor.
+
+3) How will you communicate with backend service and Suppose If I want to modified this request  before sending request 
+   to Backend. What should be do.
+   
+   Ans: We can used Axios Service interceptor.
+   
 4) What is useEffect and useRef and useState .
 
 5) Toggle On/Off functionality.
-6) Controlled and Uncontrolled. 	 Uncontrolled manage their own state which controlled component manage by parent components.
+6) Controlled and Uncontrolled. 
+	Ans: Uncontrolled manage their own state which controlled component manage by parent components.
 7) How to used interceptor in React	Axis Interceptor 
 
 8) What are the keys in React.  It is used to uniquely identify 
@@ -142,9 +149,6 @@ Benefits of Array Destructuring in React
 14) what is useEffect hook.
 
 
-
-
-
 //================================== American Express [ 7 Sept 2022] ==========================================
 
 1) What is higher order component.
@@ -186,13 +190,14 @@ Ans :   res.header("Access-Control-Allow-Origin", "*");
 11)what is react hooks vs redux.
 12)What is the difference between class vs function in React.
 13)what is Pure Components in React.
-14)  
-what will be the output of below program 
-sum(10)(20)  outut = 30
+14) what will be the output of below program 
 
-sum = (a, b) => {
-	console.log("output is ::" + (a+b)));
-}
+	sum(10)(20)  outut = 30
+
+	sum = (a, b) => {
+		console.log("output is ::" + (a+b)));
+	}
+
 15) What will be the output of below line 
 	if(false === '0')
 	
