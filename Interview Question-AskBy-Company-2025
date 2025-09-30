@@ -1,13 +1,9 @@
-1)Program for DeadLock.
-2)How will you authenicate the Lambda function API/API gateways using JWT.
-
-
 ------------------CDK global [06-Aug-25]---------------------------
 
 1) What is lag in kafka.
 2) How we can identify, that that message has been consume by consumer so far.(off-set)
-2) Supppose A microservice is calling B,C, E Mservice. It is taking 15 Sec to execute . I want to A microservice to finished its 
-   exection in 5 Sec . How we can do that.
+2) Supppose A microservice is calling B,C, E Mservice. It is taking 15 Sec to execute . I want to A microservice to 
+   finished its exection in 5 Sec . How we can do that.
 3) What is CompletableFuture.
 4) What is futhure vs CompletableFuture.
 5) Difference between Lock and Synchnorized.
@@ -16,21 +12,35 @@
 8) Immutable class with example.
 
 
--------------------------  L2 round -----------------------
+-------------------------  L2 round [12-Aug-25] -----------------------
 
 1) Challenges you have faced in your project and how you have solved that issue . Just explain
 2) When you will not use Cache. // Give the case when you will used cache.
-3) what is 12 factor of Microservice.
+3) what is 12 factor of Microservice. [3 Times]  Important Question 
+4) Find the non repeatable sub string.
 
 -------------------------- CRIS [16-Aug-25] -----------------------------------------------
 
-1)What is 12 factor of Microservice.[Codebase,Dependencies,Config,Backing Services,Build + Release +Run, Processes, Port Binding,Concurrency, Disposability,Dev/Prod Parity, Logs, Admin Processes]
+1)What is 12 factor of Microservice.
 
+	1)Codebase
+	2)Dependencies
+	3)Config
+	4)Backing Services
+	5)Build + Release +Run
+	6)Processes
+	7)Port Binding
+	8)Concurrency
+	9)Disposability
+	10)Dev/Prod Parity
+	11)Logs
+	12)Admin Processes
+	
 
 2)Write an exmaple of executor service along with multiple callble.
-3)Which datastrture you will used in case data streaming.
+3)Which Data Structure you will used in case data streaming.
 4)What approch you will consider while migrating lecegy application to new application.
-5)What datastrture you will used while taking
+5)What data struture you will used while taking
 6)Give the real case when you will used redis.
 7)What is Adopter design pattern. (When we have two incompatble interface)
 8)
@@ -40,7 +50,7 @@ interface MathmaticalFuntion {
 	public int doOperation(int a , int b);
 }
 
-class mathmaticalclass {
+class Mathmaticalclass {
 
 	public static void main(){
 
@@ -78,4 +88,196 @@ Ans: Let me know if you want a working code example with Spring Security + JWT o
 12)What is sign-URL . What is benifit of subscribe.
 13)What is SNS. What all step do I mentioned to send email vis SNS. 
    Suppose I want to send email what all do I need to required to send mail.
+   
+   
+   
+============================= Altimetrik [28-Aug-25] Very good Interview ===========================
+- L1 Round [15-Aug-25]
 
+
+
+
+
+
+- L2 Round [25-Aug-25]
+
+1)Write a Java program to find the second largest number from interger numbers with out using collection.
+   int [] = {11,22,33,10,34,54}
+   
+2)Please get the even number from the above Arrays of interger.
+
+----------- Let's go head with discussion ------------------------
+
+Q-3) In Kafka , What is the difference between Topic and Partition.
+
+Q-4) How will you ensure that message atleast should be consume by once.
+
+Q-5) Are you aware delivery semnatics.
+
+Apache Kafka provides three main delivery guarantees:
+
+✅ Kafka Delivery Semantics
+
+1. At Most Once
+
+		A)Messages may be lost, but never redelivered.
+		B)Consumer commits the offset before processing the message.
+		C)If the consumer crashes after committing, but before processing, that message is lost.
+
+	Use Case: Low-latency systems where data loss is acceptable (e.g., telemetry, metrics).
+
+2. At Least Once (Default)
+
+		A)Messages are never lost, but may be redelivered.
+		B)Consumer commits the offset after processing the message.
+		C)If the consumer crashes after processing but before committing, Kafka will re-deliver the same 
+		  message on restart.
+
+	Use Case: Systems where data loss is unacceptable, and duplicates can be handled (e.g., financial 
+	          transactions with idempotent processing).
+
+3. Exactly Once
+
+		A)No message loss and no duplicates.
+		B)Requires support from both Kafka producers and consumers, and optionally Kafka Streams.
+		C)Uses idempotent producers and transactional APIs for end-to-end exactly-once guarantees.
+
+	Use Case: Financial systems, stateful stream processing, or when message duplication is unacceptable.
+
+
+Q-6) Can we control through configuration like that message has to be read twice or thrice.
+Ans: Kafka doesn't track how many times a message was read. It only tracks consumer offsets per group.How ever there are some workaround for that it could be manually handle.
+
+Q-7) What is DLQ(Dead Letter Queue) in kafka.
+
+Ans : 
+	1)In Apache Kafka, a DLQ is a design pattern used to handle problematic or unprocessable messages
+	2)A DLQ in Kafka is a separate topic (often named topic-name.DLQ) where messages that cannot be processed 
+	  successfully are redirected, instead of being retried indefinitely or silently dropped.
+	
+	💡 Why Use a DLQ : In real-world systems, not every message can be processed successfully. Reasons include:
+
+		* Malformed data (e.g. JSON parse errors)
+		* Unexpected nulls or types
+		* Business rule violations
+		* External service failures
+
+	To avoid losing or blocking the entire stream, we send such messages to a DLQ for further inspection or reprocessing.
+	
+@KafkaListener(topics = "orders")
+public void consumeOrder(String message) {
+    try {
+        // Try processing the message
+        processOrder(message);
+    } catch (Exception e) {
+        // On failure, publish to DLQ
+        kafkaTemplate.send("orders.DLQ", message);
+    }
+}
+
+
+8) What is compaction Lag in kafka.
+
+Ans: Compaction Lag in Apache Kafka refers to the delay between when a message becomes eligible for log compaction 
+	 and when it actually gets compacted.
+	 
+	 OR
+
+	Compaction Lag is the time between when a message is eligible to be compacted and when compaction actually happens.
+
+	 Example:
+
+		A) A topic is set with cleanup.policy=compact.
+		B) A producer sends multiple records with the same key.
+		C) Older records are now eligible for compaction.
+		D) But Kafka's compaction process is asynchronous and may not run immediately.
+
+		This delay is the compaction lag.
+		
+	🛠️ How to Reduce Compaction Lag?
+
+			A)Increase the number of log cleaner threads via log.cleaner.threads.
+			B)Tweak compaction-related configs:
+
+				min.cleanable.dirty.ratio: Lower this to make compaction trigger sooner.
+				segment.ms, segment.bytes: Smaller segments allow faster compaction.
+
+	Ensure sufficient I/O and CPU for broker compaction.
+
+9) Let suppose in spring boot application , application.properties and bootstrap.properties are there.Can you explain 
+   the loading mechnisum of these files.(How these file will be loadded)
+   
+10)How will you achived 'Fault Tolrance' in microservice.
+
+Ans : 
+
+
+11)Bulk head or circuit breker pattern.
+12)What is 12 factor of microservice from coding perpective.
+13)What is eventual consistency.
+
+Ans: Eventual consistency means that data will become consistent across all systems eventually, but not necessarily right away.
+
+OR
+
+Eventual consistency means updates to data are not immediately visible to all nodes, but all nodes will eventually become consistent, given enough time and no new updates.
+
+	13.1 )Where Is It Used?
+
+	It's common in distributed systems like:
+
+	1) NoSQL databases (e.g., Cassandra, DynamoDB)
+	2) Distributed caches (e.g., Redis clusters)
+	3) Message queues (e.g., Kafka)
+	4) Microservices architectures (especially when using async communication)
+
+	✅ Benefits
+
+	Scalable across data centers and regions
+	Highly available (doesn’t block on syncing)
+	Suitable for high-throughput applications
+
+	🆚 Compared to Other Models
+
+	Model					Description
+	==============================================================================
+	Strong consistency		Every read returns the latest write immediately.
+	Eventual consistency	Reads may return stale data, but consistency will be achieved over time.
+	Causal consistency		Preserves cause-effect relationships between operations.
+	
+	✅In Microservices Example: In a microservices architecture, you might use eventual consistency when:
+
+		A) One service updates something and emits an event.
+		B) Another service listens for that event and updates its own state asynchronously.
+		C) There's no synchronous confirmation, so the systems may be temporarily inconsistent.
+
+
+14)What is Throttling (Important)
+
+Ans : Slows down or delays requests that exceed a defined rate, ensuring they are eventually processed  
+      instead of being blocked entirely
+	  
+15) Throttling vs Rate Limiter (Important)
+
+Ans : 
+
+- Rate limiting sets strict, hard limits on the number of requests a client can make in a time period, with excess requests being rejected, 
+
+- Throttling slows down or delays requests that exceed a defined rate, ensuring they are eventually processed instead  
+  of being blocked entirely
+
+16)Can you explain what all database Partisioning Strategy available.
+
+Partitioning is a key strategy used to improve performance, scalability, and manageability by dividing data into smaller, more manageable pieces called partitions or shards.
+
+Partitioning means splitting a large table or dataset into smaller parts based on certain rules. Each part (partition) can be stored and managed independently—possibly even on different machines or nodes.
+
+There are 5 main partitioning strategies:
+
+Strategy					Also Known As				Based On
+=================================================================================================================
+1. Horizontal Partitioning	Sharding					Rows
+2. Vertical Partitioning	Field-based partitioning	Columns
+3. Range Partitioning		Range-based sharding		Value ranges (e.g., date, ID ranges)
+4. Hash Partitioning		Hash-based sharding			Hash function on key field(s)
+5. List Partitioning		Category-based				Predefined lists (e.g., region='US', 'EU')
