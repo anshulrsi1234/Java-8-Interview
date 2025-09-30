@@ -1,3 +1,74 @@
+******************************** Creation *********************************************************
+ 
+1) Singleton Design Pattern:
+
+  When u will used Singleton Pattern  :  When a class in your program should have just a single instance available to 										all clients
+
+2) Factory Design Pattern :
+
+  When should we use factory design pattern :  When we have a superclass with multiple sub-classes and based on input, 
+											   we need to return one of the sub-class
+											   
+3) Abstract factory Design Pattern  
+
+ When u will used abstarct factory  :  1) When we want to expose only the interface of the collection of multiple  
+                                          objects and not the implementation.
+									   
+									   2) Abstract Factory Pattern is used by any client to create objects without 
+									      any background knowledge of the structure, composition, and architecture 
+										  of the system.
+4) Builder Design Pattern:   
+
+ When u will used Builder Pattern  :  To create complex objects that have many optional parameters.
+ 
+
+Q) What is the difference between builder pattern and factory pattern ?
+
+Ans:
+
+1) Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product  
+   objects (either simple or complex). 
+2) Builder returns the product as a final step, but in the Abstract Factory, the product gets returned immediately
+
+
+ ******************************** Structure ********************************************************* 
+
+5) Adopter Design Pattern:
+
+When u will used Adopter Design Pattern  : To make existing classes work with others without modifying their source 
+										   code.The pattern involves creating an adapter class that bridges the gap between the interfaces, allowing them to communicate effectively
+
+when you need to integrate systems that have different or incompatible interfaces, such as legacy systems, third-party libraries, or external APIs
+
+Example:  I was working on a project where we had to call an API of an external system in order to calculate tax. The server expected information like zip code, product, price, quantity, etc to calculate the tax. But the bad thing was, it expected the data in XML format. XML and SOAP APIs are really really rare these days except in some banking applications or financial institutions. All our internal APIs expect JSON as input and return JSON as output. Now if we want to make a call to the external server, we have to convert the JSON data into XML format
+
+
+ ******************************** Behaviour *********************************************************
+
+6) Strategy Design Pattern :
+
+When u will used Strategy Design Pattern : when we have multiple algorithms for specific task and we want our 		
+										   application to be flexible to chose any of the algorithm at runtime 
+										   for specific task
+
+7) Template Design Pattern
+
+When u will used Template Design Pattern =
+
+8)State Design Pattern:
+
+When u will used State Design Pattern :   
+
+Real life example of a state design pattern?
+
+Let's dive into a real-time example of the State Design Pattern by considering a mobile phone ringer. Mobile phones often have different ringer modes like “Silent”, “Vibration”, and “Ringing”. Depending on the mode, the behavior of an incoming call will differ.
+
+State Interface: 		This defines the behavior when there’s an incoming call.
+Concrete State Classes: These implement the State interface for “Silent”, “Vibration”, and “Ringing” modes.
+Context: 				This represents the mobile phone itself.
+=====================================================================================================================================
+
+
 Behaviour design Patern :
 
 1) Strategy design pattern
@@ -17,3 +88,4 @@ Benefits:
 a) Code reuse: The process_payment() logic is reused.
 b) Open/Closed Principle: You can add more processors (Apple Pay, Google Pay) without modifying existing code.
 c) Clear structure: Makes the algorithm easier to follow and maintain.
+
