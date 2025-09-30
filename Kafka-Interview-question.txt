@@ -1,6 +1,15 @@
-1) The Advantages of using Apache Kafka are as follows:
-1) How to do the partition . What is partition in kaka.
-2) Suppose Producer send  message to Kafka Topic. Now I want this message only consume by particular consumer. How to do that.
-3) What is Commit offset in Kafka.
-4) Can we used Kafka without Zookeeper.
-5)
+1) Suppose Producee publish a message to topic and you have many consumer to consume same topic. 
+   How will you make sure that message will be consume by particular consumer.
+2) What is sharding and Partition
+3) What is partition in kaka. How to do the partition
+4) What is Commit offset in Kafka.
+5) Can we used Kafka without Zookeeper.
+6) What is Kafka Lag
+7) What is the need of Kafka zookepper. || To support distributed instance environment.
+
+8) In Kafka , What is the difference between Topic and partision.
+9) How will you ensure that message atleast should be consume by once.
+10) Are you aware delivery semnatics.
+11) Can we control through configuration like that message has to be read twice or thrice.
+12) What is DLQ(Dead Queue) in Kafka.
+13) What is compaction Lag in Kafka.
